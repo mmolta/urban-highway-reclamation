@@ -5,9 +5,24 @@
 body {
     font-size: 16px;
     line-height: 1.65;
+    background-color: var(--theme-main);
+    color: var(--theme-white);
+}
+h1, h2, h3 {
+    font-family: 'Overpass', sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
 }
 :root {
-    
+    --theme-main: #2A2922;
+    --theme-white: #FDFFFC;
+    --theme-yellow: #EFCB68;
+
+    --border-radius: 8px;
+
+    --padding: 8px;
 }
 .flex-row {
     display: flex;
@@ -15,22 +30,63 @@ body {
 .flex-around {
     justify-content: space-around;
 }
+.flex-center {
+    justify-content: center;
+}
+.flex-align-center {
+    align-items: center;
+}
 .flex-wrap {
     flex-wrap: wrap;
+}
+.list-unstyled {
+    list-style-type: none;
+    padding-left: 0;
 }
 /* End General */
 
 
 
 /* Nav */
+nav {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    padding: 16px 24px;
+    border-radius: var(--border-radius);
+    background-color: var(--theme-white);
+    color: var(--theme-main);
 
+}
 /* End Nav */
 
 
 
 /* Main Column */
-
+.relative-column {
+    position: relative;
+}
+.main {
+    width: 85%;
+    max-width: 40rem;
+    margin: 0 auto;
+}
 /* End Main Column */
+
+
+
+/* Splash */
+.banner {
+    height: 65vh;
+    width: 100%;
+    background-color: var(--theme-white);
+    color: var(--theme-main);
+}
+.banner-img {
+    width: 100%;
+
+}
+/* End Splash */
 
 
 
