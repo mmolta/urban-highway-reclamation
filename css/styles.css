@@ -129,26 +129,22 @@ nav {
     margin-left: -10%;
 }
 .project-card {
-    width: 30%;
-    padding: 2px;
-    background-color: #4B7F52;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+    min-width: 100px;
+    width: 50%;
     margin-right: 2%;
     margin-bottom: 2%;
 }
 .project-img {
-    width: 100%;
-    border-top-right-radius: var(--border-radius);
+    width: 50%;
     border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
 }
 .project-list {
     padding: 16px;
     background-color: var(--theme-accent);
     color: var(--theme-white);
-    border-top: 2px solid #4B7F52;
+    border-top-right-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
 }
 .project-title, .project-subtitle {
     line-height: initial;
