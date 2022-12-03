@@ -36,7 +36,83 @@ const ref = {
         cost: '$20 million',
         link: 'https://www.cnu.org/what-we-do/build-great-places/harbor-drive'
     },
-    california: {
+    milwaukeeTwo: {
+        name: 'Park East Freeway',
+        location: 'Milwaukee, Wisonsin',
+        duration: 'One year',
+        type: '',
+        cost: '$45 million',
+        link: 'https://www.cnu.org/what-we-do/build-great-places/park-east-freeway'
+    },
+    boston: {
+        name: 'The Big Dig',
+        location: 'Boston, Massachus',
+        duration: '',
+        type: '',
+        cost: '',
+        link: ''
+    },
+    x: {
+        name: '',
+        location: '',
+        duration: '',
+        type: '',
+        cost: '',
+        link: ''
+    },
+    x: {
+        name: '',
+        location: '',
+        duration: '',
+        type: '',
+        cost: '',
+        link: ''
+    },
+    x: {
+        name: '',
+        location: '',
+        duration: '',
+        type: '',
+        cost: '',
+        link: ''
+    },
+    x: {
+        name: '',
+        location: '',
+        duration: '',
+        type: '',
+        cost: '',
+        link: ''
+    },
+    x: {
+        name: '',
+        location: '',
+        duration: '',
+        type: '',
+        cost: '',
+        link: ''
+    },
+    x: {
+        name: '',
+        location: '',
+        duration: '',
+        type: '',
+        cost: '',
+        link: ''
+    }
+}
+
+// ongoing and proposed projects. Show the future of the movement. Build hyyyyype
+const refOngoing = {
+    seattle: {
+        name: 'Alaskan Way Viaduct',
+        location: '',
+        estComp: '2025',
+        type: '',
+        cost: '',
+        link: 'https://www.cnu.org/what-we-do/build-great-places/alaskan-way-viaduct'
+    },
+    longBeach: {
         name: 'Terminal Island Freeway',
         location: '',
         duration: '',
