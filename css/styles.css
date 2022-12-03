@@ -80,6 +80,7 @@ nav {
     height: 65vh;
     width: 100%;
     background-color: var(--theme-white);
+    background-image: url(../img/undraw_city_life_gnpr.svg);
     color: var(--theme-main);
 }
 .banner-img {
