@@ -1,4 +1,11 @@
 # urban-highway-reclamation
+What is the point of this?
+    - awareness
+    - Dispel the myth of cost. People only see the price tag and don't know enough about the return on investment. Both economically and in
+    quality of life, all of these projects pay for themselves
+    - Thesis statement: This can happen in ANY city.
+        - you don't need to be wealthy, or elite to do the work and see the benefits and improvements.
+        - Greenville, carolina bridge project has the best quote. The town was dying, downtown was decaying, development was happening 
 
 ## CNU main source
 Helpful repository that has most of the information, but struggles to effectively communicate because:
@@ -21,3 +28,5 @@ Helpful repository that has most of the information, but struggles to effectivel
         - The IA is baffling. The /highways-boulevards/ landing is easy to find, straightforward and well organized. The projects within that
         are lacking. Meanwhile, the /what-we-do/ landing is a useless info dump. It's just a list of all projects of all types, paginated with
         no organization or ability to filter specific projects. If you can somehow find the right project, the content is better.
+            - The seemingly only way to find good projects wihin /what-we-do/ is a group of three similar projects at the bottom of each project.
+            It's a roulette. 

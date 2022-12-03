@@ -1,23 +1,24 @@
 // template
+// @note: cost is in millions
 /*
 {
     name: '',
     location: '',
     duration: '',
     type: '',
-    cost: '',
+    cost: 0,
     link: ''
 }
 */
 
 // "database"
-const ref = {
+const completed = {
     milwaukee: {
         name: 'Park East Corridor',
         location: 'Milwaukee, Wisconsin',
         duration: '',
         type: '',
-        cost: '',
+        cost: 0,
         link: 'https://www.milwaukeeindependent.com/syndicated/park-east-corridor-freeway-teardown-helped-put-milwaukee-national-stage-summer/'
     },
     rochester: {
@@ -25,7 +26,7 @@ const ref = {
         location: 'Rochester, New York',
         duration: '',
         type: '',
-        cost: '',
+        cost: 0,
         link: ''
     },
     portland: {
@@ -33,7 +34,7 @@ const ref = {
         location: 'Portland, Oregon',
         duration: 'Four years',
         type: '',
-        cost: '$20 million',
+        cost: 20,
         link: 'https://www.cnu.org/what-we-do/build-great-places/harbor-drive'
     },
     milwaukeeTwo: {
@@ -41,7 +42,7 @@ const ref = {
         location: 'Milwaukee, Wisonsin',
         duration: 'One year',
         type: '',
-        cost: '$45 million',
+        cost: 45,
         link: 'https://www.cnu.org/what-we-do/build-great-places/park-east-freeway'
     },
     boston: {
@@ -49,7 +50,7 @@ const ref = {
         location: 'Boston, Massachus',
         duration: '',
         type: '',
-        cost: '',
+        cost: 0,
         link: ''
     },
     x: {
@@ -57,7 +58,7 @@ const ref = {
         location: '',
         duration: '',
         type: '',
-        cost: '',
+        cost: 0,
         link: ''
     },
     x: {
@@ -65,7 +66,7 @@ const ref = {
         location: '',
         duration: '',
         type: '',
-        cost: '',
+        cost: 0,
         link: ''
     },
     x: {
@@ -73,7 +74,7 @@ const ref = {
         location: '',
         duration: '',
         type: '',
-        cost: '',
+        cost: 0,
         link: ''
     },
     x: {
@@ -81,7 +82,7 @@ const ref = {
         location: '',
         duration: '',
         type: '',
-        cost: '',
+        cost: 0,
         link: ''
     },
     x: {
@@ -89,7 +90,7 @@ const ref = {
         location: '',
         duration: '',
         type: '',
-        cost: '',
+        cost: 0,
         link: ''
     },
     x: {
@@ -97,29 +98,9 @@ const ref = {
         location: '',
         duration: '',
         type: '',
-        cost: '',
+        cost: 0,
         link: ''
     }
 }
 
-// ongoing and proposed projects. Show the future of the movement. Build hyyyyype
-const refOngoing = {
-    seattle: {
-        name: 'Alaskan Way Viaduct',
-        location: '',
-        estComp: '2025',
-        type: '',
-        cost: '',
-        link: 'https://www.cnu.org/what-we-do/build-great-places/alaskan-way-viaduct'
-    },
-    longBeach: {
-        name: 'Terminal Island Freeway',
-        location: '',
-        duration: '',
-        type: '',
-        cost: '$30-$50 million',
-        link: 'https://www.cnu.org/what-we-do/build-great-places/terminal-island-freeway'
-    }
-}
-
-export default ref
+export default completed
