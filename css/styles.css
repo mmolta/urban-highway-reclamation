@@ -19,6 +19,9 @@ h1 {
 p {
     margin: 1.5rem 0;
 }
+a {
+    color: var(--theme-white);
+}
 :root {
     --theme-main: #2A2922;
     --theme-accent: #1D7874;
@@ -54,29 +57,38 @@ p {
     list-style-type: none;
     padding-left: 0;
 }
+.link-dark {
+    color: var(--theme-main);
+}
 /* End General */
 
 
 
 /* Nav */
 nav {
-    position: absolute;
-    top: 15%;
-    left: 5%;
-    padding: 16px 24px;
-    border-radius: var(--border-radius);
+    position: sticky;
+    top: 0;
+    width: 100%;
     background-color: var(--theme-white);
     color: var(--theme-main);
-    box-shadow: var(--box-shadow);
+    border-bottom: 1px solid var(--theme-main);
+}
+.logo {
+    margin: 0 16px;
+}
+.nav-ul li {
+    padding: 16px 32px;
+    cursor: pointer;
+}
+.nav-ul li:hover {
+    background-color: var(--theme-accent);
+    color: var(--theme-white);
 }
 /* End Nav */
 
 
 
 /* Main Column */
-.relative-column {
-    position: relative;
-}
 .main {
     width: 85%;
     max-width: 40rem;
@@ -118,9 +130,12 @@ nav {
 }
 .project-card {
     width: 30%;
-    padding: 4px;
-    background-color: var(--theme-accent);
+    padding: 2px;
+    background-color: #4B7F52;
     border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-right: 2%;
+    margin-bottom: 2%;
 }
 .project-img {
     width: 100%;
@@ -129,16 +144,14 @@ nav {
 }
 .project-list {
     padding: 16px;
-    background-color: var(--theme-white);
-    color: var(--theme-main);
+    background-color: var(--theme-accent);
+    color: var(--theme-white);
+    border-top: 2px solid #4B7F52;
     border-bottom-right-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
 }
 .project-title, .project-subtitle {
     line-height: initial;
-}
-.project-title {
-    color: var(--theme-accent);
 }
 .project-subtitle {
     font-size: small;
