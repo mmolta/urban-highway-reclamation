@@ -134,6 +134,20 @@ nav {
 .section-hr {
     margin-top: 4rem;
 }
+.to-top {
+    font-family: 'Overpass', sans-serif;
+    cursor: pointer;
+    position: fixed;
+    right: 32px;
+    bottom: 16px;
+    width: 2.5rem;
+    border-top: 2px solid var(--theme-text);
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1.25s;
+}
 /* End Main Column */
 
 
@@ -166,8 +180,11 @@ nav {
     width: 90%;
     margin: 0 auto;
 }
+.projects-container {
+    margin-top: 40px;
+}
 .project-toggles-form {
-    margin: 40px 0;
+    margin-top: 40px;
 }
 .toggles-label {
     margin-right: 80px;

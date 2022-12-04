@@ -57,7 +57,7 @@
             </header>
         </section>
     
-        <main class="main">
+        <main id="main" class="main">
             <section class="intro main-column-text">
                 <em class="opening-quote"> 
                     "A salient quote that talks shit on urban highways and espouses the social, environmental, and economic benefits of removing them."
@@ -131,7 +131,7 @@
                     </label>
                 </form>
 
-                <div id="completed-projects" class="flex-row flex-around flex-align-center flex-wrap">
+                <div id="completed-projects" class="projects-container flex-row flex-around flex-align-center flex-wrap">
                     <article class="project-card flex-row">
                         <img class="project-img" src="./img/park.svg" alt="project img alt">
                         
@@ -247,7 +247,7 @@
             <section class="project-section">
                 <h2 class="section-header">Planned Projects</h2>
 
-                <div id="future-projects" class="flex-row flex-around flex-align-center flex-wrap">
+                <div id="future-projects" class="projects-container flex-row flex-around flex-align-center flex-wrap">
                     <article class="project-future flex-column">   
                         <div class="project-titles-container">
                             <h3 class="project-title">Park East Freeway</h3>
@@ -406,6 +406,10 @@
                     </li>
                 </ul>
             </section>
+
+            <span id="to-top" class="to-top smooth-scroll" onclick="window.scrollTo(0,0)">
+                ↑
+            </span>
         </main>
 
         <footer>
