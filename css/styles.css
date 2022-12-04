@@ -7,7 +7,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.65;
     background-color: var(--theme-main);
-    color: var(--theme-white);
+    color: var(--theme-text);
 }
 h1, h2, h3 {
     font-family: 'Overpass', sans-serif;
@@ -26,6 +26,7 @@ a {
     --theme-main: #2A2922;
     --theme-accent: #1D7874;
     --theme-white: #FDFFFC;
+    --theme-text: #DADCD8;
     --theme-yellow: #EFCB68;
 
     --border-radius: 8px;
@@ -90,10 +91,19 @@ nav {
 
 /* Main Column */
 .main {
+    padding: 40px 0;
+}
+.main p {
+    margin: 1.5rem auto;
+}
+.main-column-text {
     width: 85%;
     max-width: 40rem;
     margin: 0 auto;
-    padding: 40px 0;
+}
+.section-header {
+    margin-top: 3rem;
+    text-align: center;
 }
 .opening-quote {
     display: block;
@@ -113,7 +123,7 @@ nav {
     height: 65vh;
     width: 100%;
     background-color: var(--theme-white);
-    background-image: url(../img/undraw_city_life_gnpr.svg);
+    background-image: url(../img/banner.svg);
     color: var(--theme-main);
 }
 .h1-accent {
@@ -124,18 +134,19 @@ nav {
 
 
 /* Projects */
-.projects-container {
-    width: 120%;
-    margin-left: -10%;
+.project-section {
+    width: 90%;
+    margin: 0 auto;
 }
 .project-card {
-    min-width: 100px;
-    width: 50%;
     margin-right: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
+    padding: 4px;
+    border: 1px solid var(--theme-accent);
+    border-radius: var(--border-radius);
 }
 .project-img {
-    width: 50%;
+    width: 150px;
     border-top-left-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
 }
@@ -143,8 +154,12 @@ nav {
     padding: 16px;
     background-color: var(--theme-accent);
     color: var(--theme-white);
-    border-top-right-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
+    border-radius: var(--border-radius);
+    margin-left: 8px;
+}
+.future-project-list {
+    background-color: var(--theme-yellow);
+    color: var(--theme-main);
 }
 .project-title, .project-subtitle {
     line-height: initial;
@@ -154,4 +169,46 @@ nav {
     font-weight: 300;
     margin-bottom: 8px;
 }
+
+/* @CARD TEST: no img */
+.project-card-test {
+    background-color: var(--theme-accent);
+    border-radius: var(--border-radius);
+    color: var(--theme-white);
+    margin-right: 2%;
+    margin-bottom: 4%;
+}
+.project-titles-container {
+    padding: 16px;
+    text-align: center;
+}
+.subtitle-test {
+    font-size: initial;
+}
+.accent {
+    color: var(--theme-accent);
+}
+.link-dark {
+    color: var(--theme-main);
+}
+.project-list-test {
+    padding: 8px 16px;
+    background-color: var(--theme-white);
+    color: var(--theme-main);
+    border-radius: var(--border-radius);
+}
+.project-card-future-test {
+    background-color: var(--theme-yellow);
+    color: var(--theme-main);
+}
 /* End Projects */
+
+
+
+/* Footer */
+footer {
+    padding: 32px;
+    background-color: var(--theme-white);
+    color: var(--theme-main);
+}
+/* End Footer */

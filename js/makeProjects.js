@@ -1,13 +1,13 @@
-const populatedCompleted = (el, obj) => {
+const populateCompleted = (el, obj) => {
     const frag = document.createDocumentFragment()
 
     el.appendChild(frag)
 }
 
-const populatedFuture = (el, obj) => {
+const populateFuture = (el, obj) => {
     const frag = document.createDocumentFragment()
 
     el.appendChild(frag)
 }
 
-export { populatedCompleted, populatedFuture }
+export { populateCompleted, populateFuture }
