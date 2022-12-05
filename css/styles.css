@@ -66,6 +66,9 @@ a {
 .link-dark {
     color: var(--theme-main);
 }
+.inline {
+    display: inline;
+}
 .accent {
     color: var(--theme-accent);
 }

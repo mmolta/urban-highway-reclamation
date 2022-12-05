@@ -17,6 +17,6 @@ const observer = new IntersectionObserver(el => {
     else {
         toTop.style.opacity = '0%'
     }
-}, { threshold: [0.1] })
+}, { threshold: [0.2] })
 
 observer.observe(main)
