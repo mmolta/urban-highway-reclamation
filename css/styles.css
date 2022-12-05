@@ -202,10 +202,14 @@ nav {
     border: 1px solid var(--theme-accent);
     border-radius: var(--border-radius);
 }
+.project-card:hover .project-img {
+    transform: scale(1.15, 1.15);
+}
 .project-img {
     width: 150px;
     border-top-left-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
+    transition: transform 0.75s;
 }
 .project-list {
     padding: 16px;
@@ -230,19 +234,24 @@ nav {
     margin-right: 2%;
     margin-bottom: 3%;
 }
+.project-future:hover .project-future-list {
+    margin-top: -4%;
+}
 .project-titles-container {
     padding: 16px;
     color: var(--theme-white);
 }
-
 .link-dark {
     color: var(--theme-main);
 }
 .project-future-list {
+    position: relative;
+    z-index: 1;
     padding: 8px 16px;
     background-color: var(--theme-white);
     color: var(--theme-main);
     border-radius: var(--border-radius);
+    transition: margin 0.25s;
 }
 /* End Projects */
 
