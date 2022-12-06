@@ -17,4 +17,15 @@ const clickNav = e => {
     el.scrollIntoView({behavior: 'smooth'})
 }
 
-export { clickNav }
+const clickToTop = toTop => {
+    return new IntersectionObserver(el => {
+        if(el[0].isIntersecting) {
+            toTop.style.opacity = '100%'
+        }
+        else {
+            toTop.style.opacity = '0%'
+        }
+    }, { threshold: [0.2] })
+}
+
+export { clickNav, clickToTop }
