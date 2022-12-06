@@ -160,6 +160,9 @@ nav {
 
 
 /* Intro */
+.intro-header {
+    font-size: inherit;
+}
 .opening-quote {
     display: block;
     font-size: 1.5rem;
