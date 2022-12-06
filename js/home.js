@@ -12,8 +12,6 @@ const clickNav = e => {
 
     const el = sections[section]
 
-    console.log(el)
-
     el.scrollIntoView({behavior: 'smooth'})
 }
 
