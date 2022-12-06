@@ -34,19 +34,27 @@
 
             <ul class="nav-ul flex-row flex-align-center flex-around list-unstyled">
                 <li>
-                    Completed Projects
+                    <button class="nav-btn" data-navto="completed">
+                        Completed Projects
+                    </button>
                 </li>
 
                 <li>
-                    Future Projects
+                    <button class="nav-btn" data-navto="planned">
+                        Planned Projects
+                    </button>
                 </li>
 
                 <li>
-                    Glossary
+                    <button class="nav-btn" data-navto="glossary">
+                        Glossary
+                    </button>
                 </li>
 
                 <li>
-                    References
+                    <button class="nav-btn" data-navto="references">
+                        References
+                    </button>
                 </li>
             </ul>
         </nav>
@@ -110,7 +118,7 @@
 
             <hr class="main-column-text section-hr" />
 
-            <section class="project-section">
+            <section id="completed" class="project-section">
                 <h2 class="section-header">Completed Projects</h2>
 
                 <form id="completed-toggles" class="project-toggles-form flex-row flex-center flex-align-center">
@@ -246,7 +254,7 @@
 
             <hr class="main-column-text section-hr" />
 
-            <section class="project-section">
+            <section id="planned" class="project-section">
                 <h2 class="section-header">Planned Projects</h2>
 
                 <div id="future-projects" class="projects-container flex-row flex-around flex-align-center flex-wrap">
@@ -401,7 +409,7 @@
 
             <hr class="main-column-text section-hr" />
 
-            <section class="main-column-text">
+            <section id="glossary" class="main-column-text">
                 <h2 class="section-header">Glossary</h2>
                 
                 <ul class="list-unstyled">
@@ -420,7 +428,7 @@
 
             <hr class="main-column-text section-hr" />
 
-            <section class="main-column-text">
+            <section id="references" class="main-column-text">
                 <h2 class="section-header">References</h2>
                 
                 <ul class="list-unstyled">
