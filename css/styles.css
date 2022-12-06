@@ -240,9 +240,6 @@ nav {
     margin-right: 2%;
     margin-bottom: 3%;
 }
-.project-future:hover .project-future-list {
-    margin-top: -4%;
-}
 .project-titles-container {
     padding: 16px;
     color: var(--theme-white);
@@ -257,7 +254,6 @@ nav {
     background-color: var(--theme-white);
     color: var(--theme-main);
     border-radius: var(--border-radius);
-    transition: margin 0.25s;
 }
 /* End Projects */
 
