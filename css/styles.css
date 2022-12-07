@@ -213,11 +213,11 @@ nav {
     color: var(--theme-main);
 }
 .map {
+    position: relative;
     z-index: 1;
     width: calc(85% - 32px);
     height: 100%;
     border-radius: var(--border-radius);
-    /* box-shadow: var(--box-shadow); */
 }
 .legend {
     position: absolute;

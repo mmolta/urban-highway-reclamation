@@ -27,7 +27,6 @@ const hoverProject = (e, map)  => {
         localStorage.setItem('project-hovered', hoveredId)
     }
 }
-
 const unHoverProject = map => {
     let hoveredId = localStorage.getItem('project-hovered')
 
@@ -75,7 +74,6 @@ const makeCompletedHTML = props => {
         </ul>
     `
 }
-
 const makePlannedHTML = props => {
     return `
         <ul class="list-unstyled popup-list popup-${props.type}">
@@ -99,4 +97,6 @@ const clickProjectCircle = (e, map) => {
     .setHTML(html)
     .addTo(map)
 }
+
+
 export { hoverProject, unHoverProject, clickProjectCircle }

@@ -19,11 +19,20 @@ navBtns.forEach(btn => btn.onclick = e => clickNav(e))
 const observer = clickToTop(toTop)
 observer.observe(main)
 
-// @MAP TODOS:
-//     - only render USA (?)
-//     stripped down basemap (?)
-
 const map = initMap()
+
+const getListItem = e => {
+    switch(e.target.nodeName) {
+        case 'STRONG':
+            return e.target.parentElement
+        case 'SMALL':
+            return e.target.parentElement
+        case 'UL':
+            return e.target.children[e.target.children.length - 1]
+        default:
+            return e.target
+    }
+}
 
 map.on('load', () => {
     map.addSource('projects', sources.projects)
@@ -35,6 +44,52 @@ map.on('load', () => {
 
     // @TODO: apply hover and unhover state to list items
     map.on('click', 'project-circles', e => clickProjectCircle(e, map))
+
+    //map.on('idle') works but fires on every idle. ITS A START THOOOOOO
+        // immeidate solution: 
+            // exit if mapList.children.length
+            // else build list and apply them THANGS
+    map.on('styledata', () => {
+        const features = map.querySourceFeatures('projects', {
+            sourceLayer: 'projects-3w0wjb'
+        });
+        console.log(features)
+
+        const circleFeatures = map.queryRenderedFeatures({
+            layers: ['project-circles']
+        })
+
+        console.log(circleFeatures)
+    })
+
+    // @NOTE: once the bs with features is sorted, this does work
+    mapList.onmouseover = e => {
+        const listItem = getListItem(e)
+
+        const shimE = {
+            features: [
+                {
+                    id: listItem.dataset.circleid
+                }
+            ]
+        }
+
+        hoverProject(shimE, map)
+    }
+
+    mapList.onclick = e => {
+        const listItem = getListItem(e)
+
+        const shimE = {
+            features: [
+                {
+                    id: listItem.dataset.circleid
+                }
+            ]
+        }
+
+        clickProjectCircle(shimE, map)
+    }
 })
 
 // this is horseshit
@@ -56,27 +111,4 @@ map.on('load', () => {
     // });
 
 
-    // mapList.onmouseover = e => {
-    //     let listItem;
-
-    //     switch(e.target.nodeName) {
-    //         case 'STRONG':
-    //             listItem = e.target.parentElement
-    //         case 'SMALL':
-    //             listItem = e.target.parentElement
-    //             break
-    //         case 'UL':
-    //             return
-    //         default:
-    //             listItem = e.target
-    //     }
-
-    //     // need a no-maintenance way to get corresponding elements
-    //     const shimE = {
-    //         features: [
-    //             {
-    //                 id: e.dataCircleId
-    //             }
-    //         ]
-    //     }
-    // }
+    
