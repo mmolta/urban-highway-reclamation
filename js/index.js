@@ -27,14 +27,18 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibW1vbHRhIiwiYSI6ImNqZDBkMDZhYjJ6YzczNHJ4cno5e
 const initMap = () => {
     const map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v12',
+        style: 'mapbox://styles/mapbox/dark-v11',
         center: [-96, 37.8],
-        zoom: 3.75
+        zoom: 4
     })
 
     const navigationControl = new mapboxgl.NavigationControl();
 
     map.addControl(navigationControl)
+    map.fitBounds([
+        [ -125.0011, 24.9493 ],
+        [ -66.9326, 49.5904 ]
+    ])
 
     return map
 }
@@ -44,4 +48,10 @@ const initMap = () => {
     // much simpler style (render as little info as possible)
     // disable scrolling / other interactions
 
-// initMap()
+initMap()
+
+map.on('load', () => {
+    // @TODO: add map layers 
+    // for(const source in sources) map.addSource(source, sources[source])
+    // for(const layer in mapLayers) map.addLayer(mapLayers[layer])
+})

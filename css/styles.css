@@ -187,18 +187,31 @@ nav {
 /* @TEST: MAP */
 .map-section {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 80px);
     margin-top: 40px;
 }
 .map-list {
-    width: 20%;
-    padding: 16px;
+    width: 15%;
+    padding: 0;
+    margin: 0 8px;
     max-height: 100%;
     overflow-y: auto;
 }
+.map-list-item {
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--theme-text);
+}
+.map-list-item:hover {
+    cursor: pointer;
+    background-color: var(--theme-white);
+    color: var(--theme-main);
+}
 .map {
-    width: 80%;
+    z-index: 1;
+    width: 85%;
     height: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 }
 /* END @TEST MAP  */
 
