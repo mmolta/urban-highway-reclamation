@@ -23,6 +23,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600;900&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
         
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css">
         <link rel="stylesheet" href="./css/styles.css">
 
         <script type="module" defer src="./js/index.js"></script>
@@ -118,9 +119,11 @@
 
             <hr class="main-column-text section-hr" />
 
-            <section id="completed-2" class="map-section">
-                <ul class="map-list flex-column">
-
+            <section id="completed-2" class="map-section flex-row">
+                <ul class="map-list flex-column list-unstyled">
+                    <li>Park East Freeway</li>
+                    <li>Harbor Drive</li>
+                    <li>The Big Dig</li>
                 </ul>
 
                 <div id="map" class="map"></div>
@@ -472,5 +475,7 @@
         <footer>
             footer and whatnot
         </footer>
+
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
     </body>
 </html>
