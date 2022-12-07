@@ -185,7 +185,22 @@ nav {
 
 
 /* @TEST: MAP */
-/*  */
+.map-section {
+    width: 100%;
+    height: 100vh;
+    margin-top: 40px;
+}
+.map-list {
+    width: 20%;
+    padding: 16px;
+    max-height: 100%;
+    overflow-y: auto;
+}
+.map {
+    width: 80%;
+    height: 100%;
+}
+/* END @TEST MAP  */
 
 
 /* Projects */
