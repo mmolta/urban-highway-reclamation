@@ -36,13 +36,7 @@
             <ul class="nav-ul flex-row flex-align-center flex-around list-unstyled">
                 <li>
                     <button class="nav-btn" data-navto="completed">
-                        Completed Projects
-                    </button>
-                </li>
-
-                <li>
-                    <button class="nav-btn" data-navto="planned">
-                        Planned Projects
+                        Projects
                     </button>
                 </li>
 
@@ -119,37 +113,41 @@
 
             <hr class="main-column-text section-hr" />
 
-            <section id="completed-2" class="map-section flex-row">
-                <ul class="map-list flex-column list-unstyled">
-                    <!-- @TODO associate list item with map popup -->
-                    <li class="map-list-item">
-                        <strong>Park East Freeway</strong><br>
-                        <small>Milwaukee, Wisconsin</small>
-                    </li>
-                    <li class="map-list-item">
-                        <strong>Harbor Drive</strong><br>
-                        <small>Portland, Oregon</small>
-                    </li>
-                    <li class="map-list-item">
-                        <strong>The Big Dig</strong><br>
-                        <small>Boston, Masachussetts</small>
-                    </li>
-                </ul>
+            <section id="completed" class="section">
+                <h2 class="section-header">Completed and Planned Projects</h2>
 
-                <div id="map" class="map">
-                    <div class="legend">
-                        <h3>Legend</h3>
-                        <p>
-                            Combo legend and form. Pattern is checkbox, symbol, label.<br>
-                            categories are: completed, planned and possibly removal types (section, full, etc)
-                        </p>
+                <div class="map-section flex-row">
+                    <ul class="map-list flex-column list-unstyled">
+                        <!-- @TODO associate list item with map popup -->
+                        <li class="map-list-item">
+                            <strong>Park East Freeway</strong><br>
+                            <small>Milwaukee, Wisconsin</small>
+                        </li>
+                        <li class="map-list-item">
+                            <strong>The Inner Loop</strong><br>
+                            <small>Rochester, New York</small>
+                        </li>
+                        <li class="map-list-item">
+                            <strong>Alaskan Way Viaduct</strong><br>
+                            <small>Seattle, Washington</small>
+                        </li>
+                    </ul>
+    
+                    <div id="map" class="map">
+                        <div class="legend">
+                            <h3>Legend</h3>
+                            <p>
+                                Combo legend and form. Pattern is checkbox, symbol, label.<br>
+                                categories are: completed, planned and possibly removal types (section, full, etc)
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <hr class="main-column-text section-hr" />
 
-            <section id="completed" class="project-section">
+            <section id="completed-old" class="section">
                 <h2 class="section-header">Completed Projects</h2>
 
                 <form id="completed-toggles" class="project-toggles-form flex-row flex-center flex-align-center">
@@ -301,7 +299,7 @@
 
             <hr class="main-column-text section-hr" />
 
-            <section id="planned" class="project-section">
+            <section id="planned-old" class="section">
                 <h2 class="section-header">Planned Projects</h2>
 
                 <div id="future-projects" class="projects-container flex-row flex-around flex-align-center flex-wrap">
@@ -456,7 +454,7 @@
 
             <hr class="main-column-text section-hr" />
 
-            <section id="glossary" class="main-column-text">
+            <section id="glossary" class="section main-column-text">
                 <h2 class="section-header">Glossary</h2>
                 
                 <ul class="list-unstyled">
@@ -475,7 +473,7 @@
 
             <hr class="main-column-text section-hr" />
 
-            <section id="references" class="main-column-text">
+            <section id="references" class="section main-column-text">
                 <h2 class="section-header">References</h2>
                 
                 <ul class="list-unstyled">

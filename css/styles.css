@@ -134,6 +134,10 @@ nav {
     max-width: 40rem;
     margin: 0 auto;
 }
+.section {
+    /* btn padding top & bottom (64px) + extra for line height */
+    scroll-margin-top: 80px;
+}
 .section-header {
     margin-top: 4rem;
     text-align: center;
@@ -185,11 +189,12 @@ nav {
 /* End intro */
 
 
-/* @TEST: MAP */
+/* MAP */
 .map-section {
     width: 100%;
-    height: calc(100vh - 80px);
-    margin-top: 40px;
+    /* 100vh - nav (80px), section-header (4rem), margin(16px) */
+    height: calc(100vh - 96px - 4rem);
+    margin-top: 16px;
 }
 .map-list {
     width: 15%;
@@ -209,10 +214,10 @@ nav {
 }
 .map {
     z-index: 1;
-    width: 85%;
+    width: calc(85% - 32px);
     height: 100%;
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
 }
 .legend {
     position: absolute;
@@ -227,16 +232,11 @@ nav {
     /* replicate mapbox box shadow */
     box-shadow: 0 0 0 2px rgba(0,0,0,.1);
 }
-/* END @TEST MAP  */
+/* END Map  */
 
 
 /* Projects */
-.project-section {
-    width: 90%;
-    margin: 0 auto;
-    /* btn padding top & bottom (64px) + extra for line height */
-    scroll-margin-top: 80px;
-}
+/* @TODO: deprecate? */
 .projects-container {
     margin-top: 40px;
 }
