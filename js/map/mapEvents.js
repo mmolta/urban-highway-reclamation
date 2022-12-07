@@ -98,5 +98,4 @@ const clickProjectCircle = (e, map) => {
     .addTo(map)
 }
 
-
 export { hoverProject, unHoverProject, clickProjectCircle }

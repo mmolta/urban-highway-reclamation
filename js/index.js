@@ -38,28 +38,24 @@ map.on('load', () => {
     map.addSource('projects', sources.projects)
     map.addLayer(projectsLayer)
 
-
     map.on('mouseenter', 'project-circles', e => hoverProject(e, map))
     map.on('mouseleave', 'project-circles', () => unHoverProject(map))
 
     // @TODO: apply hover and unhover state to list items
     map.on('click', 'project-circles', e => clickProjectCircle(e, map))
 
-    //map.on('idle') works but fires on every idle. ITS A START THOOOOOO
-        // immeidate solution: 
-            // exit if mapList.children.length
-            // else build list and apply them THANGS
-    map.on('styledata', () => {
-        const features = map.querySourceFeatures('projects', {
-            sourceLayer: 'projects-3w0wjb'
-        });
-        console.log(features)
+    // wait for a completed sourcedata content event
+    map.on('sourcedata', e => {
+        const loaded = e.isSourceLoaded
+        const visibilityEvent = e.sourceDataType
 
-        const circleFeatures = map.queryRenderedFeatures({
-            layers: ['project-circles']
-        })
-
-        console.log(circleFeatures)
+        if(!visibilityEvent && loaded) {
+            const circleFeatures = map.queryRenderedFeatures({
+                layers: ['project-circles']
+            })
+    
+            console.log(circleFeatures)
+        }
     })
 
     // @NOTE: once the bs with features is sorted, this does work
