@@ -1,24 +1,24 @@
 // @TODO: add hover Feature state to increase size of 
 const projectsLayer = {
-    id: "projects",
-    type: "circle",
+    id: 'project-circles',
+    type: 'circle',
     source: 'projects',
     'source-layer': 'projects-3w0wjb',
     paint: {
-        "circle-radius": ['case',
+        'circle-radius': ['case',
             ['boolean', ['feature-state', 'hover'], false],
-            5,
-            8
+            8,
+            5
         ],
-        "circle-color": ["match",
-            ["get", "type"],
-            "completed", "#1D7874",
-            "planned", "#EFCB68",
-            "#fff"
+        'circle-color': ['match',
+            ['get', 'type'],
+            'completed', '#1D7874',
+            'planned', '#EFCB68',
+            '#fff'
         ],
-        "circle-stroke-width": 1,
-        "circle-stroke-color": "#FDFFFC",
-        "circle-stroke-opacity": 1,
+        'circle-stroke-width': 1,
+        'circle-stroke-color': '#FDFFFC',
+        'circle-stroke-opacity': 1,
     }
 }
 
