@@ -34,6 +34,31 @@ const getListItem = e => {
     }
 }
 
+const makeProjectListItems = (features, list) => {
+    const frag = document.createDocumentFragment()
+
+    features.forEach(feature => {
+        const li = document.createElement('li')
+        const title = document.createElement('strong')
+        const br = document.createElement('br')
+        const subtitle = document.createElement('small')
+    
+        li.dataset.circleid = feature.id
+        li.classList.add('map-list-item')
+    
+        title.textContent = feature.properties.name
+        subtitle.textContent = feature.properties.location
+    
+        li.appendChild(title)
+        li.appendChild(br)
+        li.appendChild(subtitle)
+        
+        frag.appendChild(li)
+    })
+
+    list.appendChild(frag)
+}
+
 map.on('load', () => {
     map.addSource('projects', sources.projects)
     map.addLayer(projectsLayer)
@@ -41,7 +66,6 @@ map.on('load', () => {
     map.on('mouseenter', 'project-circles', e => hoverProject(e, map))
     map.on('mouseleave', 'project-circles', () => unHoverProject(map))
 
-    // @TODO: apply hover and unhover state to list items
     map.on('click', 'project-circles', e => clickProjectCircle(e, map))
 
     // wait for a completed sourcedata content event
@@ -53,12 +77,12 @@ map.on('load', () => {
             const circleFeatures = map.queryRenderedFeatures({
                 layers: ['project-circles']
             })
-    
-            console.log(circleFeatures)
+            
+            makeProjectListItems(circleFeatures, mapList)
         }
     })
 
-    // @NOTE: once the bs with features is sorted, this does work
+    // @NOTE:
     mapList.onmouseover = e => {
         const listItem = getListItem(e)
 
