@@ -213,6 +213,19 @@ nav {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
+.legend {
+    position: absolute;
+    z-index: 2;
+    max-width: 250px;
+    bottom: 30px;
+    right: 10px;
+    padding: 8px;
+    border-radius: var(--border-radius);
+    color: var(--theme-main);
+    background-color: var(--theme-text);
+    /* replicate mapbox box shadow */
+    box-shadow: 0 0 0 2px rgba(0,0,0,.1);
+}
 /* END @TEST MAP  */
 
 

@@ -121,6 +121,7 @@
 
             <section id="completed-2" class="map-section flex-row">
                 <ul class="map-list flex-column list-unstyled">
+                    <!-- @TODO associate list item with map popup -->
                     <li class="map-list-item">
                         <strong>Park East Freeway</strong><br>
                         <small>Milwaukee, Wisconsin</small>
@@ -135,7 +136,15 @@
                     </li>
                 </ul>
 
-                <div id="map" class="map"></div>
+                <div id="map" class="map">
+                    <div class="legend">
+                        <h3>Legend</h3>
+                        <p>
+                            Combo legend and form. Pattern is checkbox, symbol, label.<br>
+                            categories are: completed, planned and possibly removal types (section, full, etc)
+                        </p>
+                    </div>
+                </div>
             </section>
 
             <hr class="main-column-text section-hr" />
