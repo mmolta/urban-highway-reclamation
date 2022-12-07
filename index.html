@@ -135,11 +135,23 @@
     
                     <div id="map" class="map">
                         <div class="legend">
-                            <h3>Legend</h3>
-                            <p>
-                                Combo legend and form. Pattern is checkbox, symbol, label.<br>
-                                categories are: completed, planned and possibly removal types (section, full, etc)
-                            </p>
+                            <h3 class="legend-header">Map Legend</h3>
+
+                            <form id="map-toggles" class="map-toggles-form">
+                                <label class="map-toggles-label flex-row flex-align-center">
+                                    <input type="checkbox" checked />
+                                    <span class="map-toggle-symbol map-toggle-symbol-complete"></span>
+
+                                    <span>Completed projects</span>
+                                </label>
+            
+                                <label class="map-toggles-label flex-row flex-align-center">
+                                    <input type="checkbox" checked />
+                                    <span class="map-toggle-symbol map-toggle-symbol-planned"></span>
+
+                                    Planned projects
+                                </label>
+                            </form>
                         </div>
                     </div>
                 </div>

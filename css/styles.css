@@ -232,6 +232,25 @@ nav {
     /* replicate mapbox box shadow */
     box-shadow: 0 0 0 2px rgba(0,0,0,.1);
 }
+.legend-header {
+    text-align: center;
+}
+.map-toggles-label {
+    padding: 8px;
+}
+.map-toggle-symbol {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px 0 16px;
+    border-radius: var(--border-radius);
+}
+.map-toggle-symbol-complete {
+    background-color: var(--theme-accent);
+}
+.map-toggle-symbol-planned {
+    background-color: var(--theme-yellow);
+}
 /* END Map  */
 
 
@@ -250,7 +269,6 @@ nav {
     width: 75px;
 }
 .project-card {
-    margin-right: 2%;
     margin-bottom: 3%;
     padding: 4px;
     border: 1px solid var(--theme-accent);
