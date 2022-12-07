@@ -1,4 +1,4 @@
-import { clickNav, clickToTop } from "./home.js";
+import { clickNav, clickToTop, makeProjectListItems, hoverMapList } from "./home.js";
 import initMap from "./map/map.js";
 import projectsLayer from './map/layers.js'
 import sources from './map/sources.js'
@@ -21,44 +21,6 @@ observer.observe(main)
 
 const map = initMap()
 
-const getListItem = e => {
-    switch(e.target.nodeName) {
-        case 'STRONG':
-            return e.target.parentElement
-        case 'SMALL':
-            return e.target.parentElement
-        case 'UL':
-            return e.target.children[e.target.children.length - 1]
-        default:
-            return e.target
-    }
-}
-
-const makeProjectListItems = (features, list) => {
-    const frag = document.createDocumentFragment()
-
-    features.forEach(feature => {
-        const li = document.createElement('li')
-        const title = document.createElement('strong')
-        const br = document.createElement('br')
-        const subtitle = document.createElement('small')
-    
-        li.dataset.circleid = feature.id
-        li.classList.add('map-list-item')
-    
-        title.textContent = feature.properties.name
-        subtitle.textContent = feature.properties.location
-    
-        li.appendChild(title)
-        li.appendChild(br)
-        li.appendChild(subtitle)
-        
-        frag.appendChild(li)
-    })
-
-    list.appendChild(frag)
-}
-
 map.on('load', () => {
     map.addSource('projects', sources.projects)
     map.addLayer(projectsLayer)
@@ -73,6 +35,10 @@ map.on('load', () => {
         const loaded = e.isSourceLoaded
         const visibilityEvent = e.sourceDataType
 
+        // @NOTE: for map click, I could place
+        // the circleFeatures on localStorage
+        // and then select from there for the mapList click event
+            // or just do another queryRendered...
         if(!visibilityEvent && loaded) {
             const circleFeatures = map.queryRenderedFeatures({
                 layers: ['project-circles']
@@ -82,21 +48,7 @@ map.on('load', () => {
         }
     })
 
-    // @NOTE:
-    mapList.onmouseover = e => {
-        const listItem = getListItem(e)
-
-        const shimE = {
-            features: [
-                {
-                    id: listItem.dataset.circleid
-                }
-            ]
-        }
-
-        hoverProject(shimE, map)
-    }
-
+    mapList.onmouseover = e => hoverMapList(e, hoverProject, map)
     mapList.onmouseleave = () => unHoverProject(map)
 
     mapList.onclick = e => {
@@ -113,24 +65,3 @@ map.on('load', () => {
         clickProjectCircle(shimE, map)
     }
 })
-
-// this is horseshit
-// new plan: build the list from rendered features
-        // attach data-id and click handler at creation
-    // const circleFeatures = map.queryRenderedFeatures({
-    //     layers: ['project-circles']
-    // })
-
-    /*
-        source: "mmolta.2i15axa1"
-        source_name: "projects-3w0w"
-    */
-
-    // how the fuck is this an empty array. hoverState uses the same source - sourceLayer
-    // and GETS THE FEATURES I NEED WHAT THE FUCK
-    // const features = map.querySourceFeatures('projects', {
-    //     sourceLayer: 'projects-3w0wjb'
-    // });
-
-
-    
