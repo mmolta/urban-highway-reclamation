@@ -73,6 +73,8 @@ map.on('load', () => {
         hoverProject(shimE, map)
     }
 
+    mapList.onmouseleave = () => unHoverProject(map)
+
     mapList.onclick = e => {
         const listItem = getListItem(e)
 
