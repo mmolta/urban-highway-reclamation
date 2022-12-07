@@ -1,6 +1,6 @@
-// hover state applies to:
+// Hover events. Applies to:
+// hovering on project circles
     // hovering on list items
-    // hovering on project circles
 const hoverProject = (e, map)  => {
     let hoveredId = localStorage.getItem('project-hovered')
     
@@ -43,4 +43,60 @@ const unHoverProject = map => {
     localStorage.setItem('project-hovered', null)
 }
 
-export { hoverProject, unHoverProject }
+
+// Click events. Applies to:
+    // clicking on project circles
+    // clicking on list items
+const popup = new mapboxgl.Popup()
+
+const makeCompletedHTML = props => {
+    return `
+        <ul class="list-unstyled popup-list popup-${props.type}">
+            <li>
+                <h3 class="popup-title">${props.name}</h3>
+                <h4 class="popup-subtitle">${props.location}</h4>
+            </li>
+
+            <li>
+                duration: ${props.duration}
+            </li>
+
+            <li>
+                cost: $${props.cost} million
+            </li>
+
+            <li>
+                return: $${props.return} billion
+            </li>
+
+            <li>
+                <a href="${props.link}" target="_blank" rel="noopener noreferrer">view project</a>
+            </li>
+        </ul>
+    `
+}
+
+const makePlannedHTML = props => {
+    return `
+        <ul class="list-unstyled popup-list popup-${props.type}">
+            <li>
+                <h3 class="popup-title">${props.name}</h3>
+                <h4 class="popup-subtitle">${props.location}</h4>
+            </li>
+
+            <li>
+                <a href="${props.link}" target="_blank" rel="noopener noreferrer">view proposal</a>
+            </li>
+        </ul>
+    `
+}
+const clickProjectCircle = (e, map) => {
+    const project = e.features[0].properties
+    const html = project.type === 'completed' ? makeCompletedHTML(project) : makePlannedHTML(project)
+
+    popup
+    .setLngLat(e.lngLat)
+    .setHTML(html)
+    .addTo(map)
+}
+export { hoverProject, unHoverProject, clickProjectCircle }

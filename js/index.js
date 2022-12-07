@@ -2,7 +2,7 @@ import { clickNav, clickToTop } from "./home.js";
 import initMap from "./map/map.js";
 import projectsLayer from './map/layers.js'
 import sources from './map/sources.js'
-import { hoverProject, unHoverProject } from "./map/mapEvents.js";
+import { hoverProject, unHoverProject, clickProjectCircle } from "./map/mapEvents.js";
 
 const main = document.getElementById('main')
 const toTop = document.getElementById('to-top')
@@ -24,7 +24,6 @@ observer.observe(main)
 //     stripped down basemap (?)
 
 const map = initMap()
-const popup = new mapboxgl.Popup()
 
 map.on('load', () => {
     map.addSource('projects', sources.projects)
@@ -37,60 +36,6 @@ map.on('load', () => {
     // @TODO: apply hover and unhover state to list items
     map.on('click', 'project-circles', e => clickProjectCircle(e, map))
 })
-
-// click state applies to:
-    // clicking on project circles
-
-const makeCompletedHTML = props => {
-    return `
-        <ul class="list-unstyled popup-list popup-${props.type}">
-            <li>
-                <h3 class="popup-title">${props.name}</h3>
-                <h4 class="popup-subtitle">${props.location}</h4>
-            </li>
-
-            <li>
-                duration: ${props.duration}
-            </li>
-
-            <li>
-                cost: $${props.cost} million
-            </li>
-
-            <li>
-                return: $${props.return} billion
-            </li>
-
-            <li>
-                <a href="${props.link}" target="_blank" rel="noopener noreferrer">view project</a>
-            </li>
-        </ul>
-    `
-}
-
-const makePlannedHTML = props => {
-    return `
-        <ul class="list-unstyled popup-list popup-${props.type}">
-            <li>
-                <h3 class="popup-title">${props.name}</h3>
-                <h4 class="popup-subtitle">${props.location}</h4>
-            </li>
-
-            <li>
-                <a href="${props.link}" target="_blank" rel="noopener noreferrer">view proposal</a>
-            </li>
-        </ul>
-    `
-}
-const clickProjectCircle = (e, map) => {
-    const project = e.features[0].properties
-    const html = project.type === 'completed' ? makeCompletedHTML(project) : makePlannedHTML(project)
-
-    popup
-    .setLngLat(e.lngLat)
-    .setHTML(html)
-    .addTo(map)
-}
 
 // this is horseshit
 // new plan: build the list from rendered features

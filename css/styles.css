@@ -182,9 +182,9 @@ nav {
 }
 .figures-number {
     font-size: 2.75rem;
-    font-weight: 700;
     color: var(--theme-accent);
     text-shadow: var(--box-shadow);
+    margin-bottom: 8px;
 }
 /* End intro */
 
@@ -253,7 +253,7 @@ nav {
     padding: 4px;
     border-radius: var(--border-radius);
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 .popup-list {
     padding: 16px;
