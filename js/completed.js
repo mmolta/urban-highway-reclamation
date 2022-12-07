@@ -7,6 +7,7 @@
     duration: '',
     type: '',
     cost: 0,
+    return: 0,
     link: ''
 }
 */
@@ -18,7 +19,8 @@ const completed = {
         location: 'Milwaukee, Wisconsin',
         duration: '',
         type: '',
-        cost: 0,
+        cost: 25,
+        return: 2,
         link: 'https://www.milwaukeeindependent.com/syndicated/park-east-corridor-freeway-teardown-helped-put-milwaukee-national-stage-summer/'
     },
     rochester: {
@@ -27,6 +29,7 @@ const completed = {
         duration: '',
         type: '',
         cost: 0,
+        return: 0,
         link: ''
     },
     portland: {
@@ -35,6 +38,7 @@ const completed = {
         duration: 'Four years',
         type: '',
         cost: 20,
+        return: 0,
         link: 'https://www.cnu.org/what-we-do/build-great-places/harbor-drive'
     },
     milwaukeeTwo: {
@@ -43,6 +47,7 @@ const completed = {
         duration: 'One year',
         type: '',
         cost: 45,
+        return: 0,
         link: 'https://www.cnu.org/what-we-do/build-great-places/park-east-freeway'
     },
     boston: {
@@ -51,6 +56,7 @@ const completed = {
         duration: '',
         type: '',
         cost: 0,
+        return: 0,
         link: ''
     },
     x: {
@@ -59,6 +65,7 @@ const completed = {
         duration: '',
         type: '',
         cost: 0,
+        return: 0,
         link: ''
     },
     x: {
@@ -67,6 +74,7 @@ const completed = {
         duration: '',
         type: '',
         cost: 0,
+        return: 0,
         link: ''
     },
     x: {
@@ -75,6 +83,7 @@ const completed = {
         duration: '',
         type: '',
         cost: 0,
+        return: 0,
         link: ''
     },
     x: {
@@ -83,6 +92,7 @@ const completed = {
         duration: '',
         type: '',
         cost: 0,
+        return: 0,
         link: ''
     },
     x: {
@@ -91,6 +101,7 @@ const completed = {
         duration: '',
         type: '',
         cost: 0,
+        return: 0,
         link: ''
     },
     x: {
@@ -99,6 +110,7 @@ const completed = {
         duration: '',
         type: '',
         cost: 0,
+        return: 0,
         link: ''
     }
 }
