@@ -2,7 +2,8 @@ import completed from "./completed.js";
 import future from "./future.js";
 import { clickNav, clickToTop } from "./home.js";
 import { populateCompleted, populateFuture } from "./makeProjects.js";
-import projects from './map/projectsLayer.js'
+import projectsLayer from './map/layers.js'
+import projectsSource from './map/sources.js'
 
 const main = document.getElementById('main')
 const completedProjects = document.getElementById('completed-projects')
@@ -25,6 +26,7 @@ observer.observe(main)
 // @TEST MAP
 mapboxgl.accessToken = 'pk.eyJ1IjoibW1vbHRhIiwiYSI6ImNqZDBkMDZhYjJ6YzczNHJ4cno5eTcydnMifQ.RJNJ7s7hBfrJITOBZBdcOA'
 
+// @TODO home icon to zoom back to USA?
 const initMap = () => {
     const map = new mapboxgl.Map({
         container: 'map',
@@ -36,10 +38,13 @@ const initMap = () => {
     const navigationControl = new mapboxgl.NavigationControl();
 
     map.addControl(navigationControl)
+
     map.fitBounds([
         [ -125.0011, 24.9493 ],
         [ -66.9326, 49.5904 ]
     ])
+
+    map.scrollZoom.disable()
 
     return map
 }
@@ -47,13 +52,9 @@ const initMap = () => {
 // @MAP TODOS:
     // - only render USA
     // much simpler style (render as little info as possible)
-    // disable scrolling / other interactions
 
-const map = initMap()
+// const map = initMap()
 
-map.on('load', () => {
-    // @TODO: add map layers 
-    // for(const source in sources) map.addSource(source, sources[source])
-    // for(const layer in mapLayers) map.addLayer(mapLayers[layer])
-    map.addLayer(projects)
-})
+// map.on('load', () => {
+//     map.addLayer(projectsLayer(projectsSource))
+// })

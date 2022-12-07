@@ -223,7 +223,7 @@ nav {
     padding: 8px;
     border-radius: var(--border-radius);
     color: var(--theme-main);
-    background-color: var(--theme-text);
+    background-color: var(--theme-white);
     /* replicate mapbox box shadow */
     box-shadow: 0 0 0 2px rgba(0,0,0,.1);
 }
