@@ -249,6 +249,38 @@ nav {
 .map-toggle-symbol-planned {
     background-color: var(--theme-yellow);
 }
+.mapboxgl-popup-content {
+    padding: 4px;
+    border-radius: var(--border-radius);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+}
+.popup-list {
+    padding: 16px;
+    border-radius: var(--border-radius);
+}
+.popup-list li {
+    margin-bottom: 4px;
+}
+.popup-completed {
+    color: var(--theme-white);
+    background-color: var(--theme-accent);
+}
+.popup-planned {
+    background-color: var(--theme-yellow);
+    color: var(--theme-main);
+}
+.popup-planned a {
+    color: var(--theme-main);
+}
+.popup-title, .popup-subtitle {
+    line-height: initial;
+}
+.popup-subtitle {
+    font-size: small;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
 /* END Map  */
 
 

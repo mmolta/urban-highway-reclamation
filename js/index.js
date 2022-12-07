@@ -40,38 +40,51 @@ map.on('load', () => {
 
 // click state applies to:
     // clicking on project circles
-const clickProjectCircle = (e, map) => {
-    console.log(e)
-    const project = e.features[0].properties
 
-    const html = `
-        <article class="project-card flex-row">
-            <img class="project-img" src="./img/park.svg" alt="project img alt">
-            
-            <ul class="list-unstyled project-list">
-                <li>
-                    <h3 class="project-title">${project.name}</h3>
-                    <h4 class="project-subtitle">${project.location}</h4>
-                </li>
+const makeCompletedHTML = props => {
+    return `
+        <ul class="list-unstyled popup-list popup-${props.type}">
+            <li>
+                <h3 class="popup-title">${props.name}</h3>
+                <h4 class="popup-subtitle">${props.location}</h4>
+            </li>
 
-                <li>
-                    duration: ${project.duration}
-                </li>
+            <li>
+                duration: ${props.duration}
+            </li>
 
-                <li>
-                    cost: $${project.cost} million
-                </li>
+            <li>
+                cost: $${props.cost} million
+            </li>
 
-                <li>
-                    return: $${project.return} billion
-                </li>
+            <li>
+                return: $${props.return} billion
+            </li>
 
-                <li>
-                    <a href="${project.link}" target="_blank" rel="noopener noreferrer">view project</a>
-                </li>
-            </ul>
-        </article>
+            <li>
+                <a href="${props.link}" target="_blank" rel="noopener noreferrer">view project</a>
+            </li>
+        </ul>
     `
+}
+
+const makePlannedHTML = props => {
+    return `
+        <ul class="list-unstyled popup-list popup-${props.type}">
+            <li>
+                <h3 class="popup-title">${props.name}</h3>
+                <h4 class="popup-subtitle">${props.location}</h4>
+            </li>
+
+            <li>
+                <a href="${props.link}" target="_blank" rel="noopener noreferrer">view proposal</a>
+            </li>
+        </ul>
+    `
+}
+const clickProjectCircle = (e, map) => {
+    const project = e.features[0].properties
+    const html = project.type === 'completed' ? makeCompletedHTML(project) : makePlannedHTML(project)
 
     popup
     .setLngLat(e.lngLat)
