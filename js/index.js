@@ -2,6 +2,7 @@ import completed from "./completed.js";
 import future from "./future.js";
 import { clickNav, clickToTop } from "./home.js";
 import { populateCompleted, populateFuture } from "./makeProjects.js";
+import projects from './map/projectsLayer.js'
 
 const main = document.getElementById('main')
 const completedProjects = document.getElementById('completed-projects')
@@ -48,10 +49,11 @@ const initMap = () => {
     // much simpler style (render as little info as possible)
     // disable scrolling / other interactions
 
-initMap()
+const map = initMap()
 
 map.on('load', () => {
     // @TODO: add map layers 
     // for(const source in sources) map.addSource(source, sources[source])
     // for(const layer in mapLayers) map.addLayer(mapLayers[layer])
+    map.addLayer(projects)
 })

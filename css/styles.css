@@ -180,6 +180,7 @@ nav {
     font-size: 2.75rem;
     font-weight: 700;
     color: var(--theme-accent);
+    text-shadow: var(--box-shadow);
 }
 /* End intro */
 
