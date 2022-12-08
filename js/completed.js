@@ -12,7 +12,7 @@
 }
 
 
-// GEOJSON Template (no comments in geojson file)
+// GEOJSON Template - Completed
 {
     "type": "Feature",
     "properties": {
@@ -22,6 +22,18 @@
         "type": "completed",
         "cost": 0,
         "return": 0,
+        "link": ""
+    },
+    "geometry": { "type": "Point", "coordinates": [0, 0]}
+},
+
+// GEOJSON Template - Planned
+{
+    "type": "Feature",
+    "properties": {
+        "name": "",
+        "location": "",
+        "type": "planned",
         "link": ""
     },
     "geometry": { "type": "Point", "coordinates": [0, 0]}
