@@ -8,11 +8,15 @@ What is the point of this?
         - Greenville, carolina bridge project has the best quote. The town was dying, downtown was decaying, development was happening 
 
 ## NOTES
-- projects.geojson is my database
-    - create tileset with it. it contains all project info
 
 ## TODO
-
+- set up map filter (or get rid of it. Two data types, is it even needed?)
+- glossary terms
+- paste references
+- data entry
+- find quote
+- finish homepage text
+- responsive (mostly done already. just hide map, the rest flows already)
 
 ## CNU main source
 Helpful repository that has most of the information, but struggles to effectively communicate because:
