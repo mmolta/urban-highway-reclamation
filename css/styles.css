@@ -253,10 +253,11 @@ nav {
     background-color: var(--theme-yellow);
 }
 .mapboxgl-popup-content {
-    padding: 4px;
     border-radius: var(--border-radius);
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 0.95rem;
+    padding: 0;
+    border: 2px solid var(--theme-white);
 }
 .popup-list {
     padding: 16px;

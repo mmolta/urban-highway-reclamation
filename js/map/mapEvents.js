@@ -43,6 +43,7 @@ const unHoverProject = map => {
 }
 
 
+
 // Click events. Applies to:
     // clicking on project circles
     // clicking on list items
