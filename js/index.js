@@ -60,5 +60,4 @@ map.on('load', () => {
     mapList.onmouseover = e => hoverMapList(e, hoverProject, map)
     mapList.onmouseleave = () => unHoverProject(map)
     mapList.onclick = e => clickMapList(e, clickProjectCircle, map)
-
 })
