@@ -258,8 +258,8 @@ nav {
     padding: 0;
     background: transparent;
     /* border looks like road lines. top/bottom or left/right...? */
-    border-top: 4px dashed var(--theme-text);
-    border-bottom: 4px dashed var(--theme-text);
+    border-left: 5px dashed var(--theme-text);
+    border-right: 5px dashed var(--theme-text);
 }
 .popup-list {
     padding: 16px;

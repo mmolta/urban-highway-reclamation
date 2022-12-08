@@ -94,7 +94,7 @@ const clickProjectCircle = (e, map) => {
     const html = project.type === 'completed' ? makeCompletedHTML(project) : makePlannedHTML(project)
 
     popup
-    .setLngLat(e.lngLat)
+    .setLngLat(e.lngLat || project.coords)
     .setHTML(html)
     .addTo(map)
 }

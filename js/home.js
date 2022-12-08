@@ -38,8 +38,8 @@ const makeProjectListItems = (features, list) => {
         li.dataset.circleid = feature.id
         li.classList.add('map-list-item')
     
-        title.textContent = feature.properties.name
-        subtitle.textContent = feature.properties.location
+        title.textContent = feature.props.name
+        subtitle.textContent = feature.props.location
     
         li.appendChild(title)
         li.appendChild(br)
@@ -75,5 +75,25 @@ const hoverMapList = (e, hoverProject, map) => {
 
     hoverProject(shimE, map)
 }
+const clickMapList = (e, clickProjectCircle, map) => {
+    const listItem = getListItem(e)
+    const featuresString = localStorage.getItem('circle-features')
+    const features = JSON.parse(featuresString)
 
-export { clickNav, clickToTop, makeProjectListItems, hoverMapList }
+    // == because comparing string and int
+    const project = features.filter(el => el.id == listItem.dataset.circleid)
+    
+    if(project.length){
+
+        // fake a map event object
+        const shimE = {
+            features: [
+                {properties: project[0].props}
+            ]
+        }
+        
+        clickProjectCircle(shimE, map)
+    } 
+}
+
+export { clickNav, clickToTop, makeProjectListItems, hoverMapList, clickMapList }

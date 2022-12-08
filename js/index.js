@@ -1,4 +1,4 @@
-import { clickNav, clickToTop, makeProjectListItems, hoverMapList } from "./home.js";
+import { clickNav, clickToTop, makeProjectListItems, hoverMapList, clickMapList } from "./home.js";
 import initMap from "./map/map.js";
 import projectsLayer from './map/layers.js'
 import sources from './map/sources.js'
@@ -42,25 +42,23 @@ map.on('load', () => {
                 layers: ['project-circles']
             })
             
-            makeProjectListItems(circleFeatures, mapList)
+            const features = circleFeatures.map(features => {
+                const coords = {coords: features.geometry.coordinates}
+                
+                return {
+                    id: features.id,
+                    props: {...features.properties, ...coords}
+                }
+            })
+
+            makeProjectListItems(features, mapList)
             localStorage.setItem('list-loaded', true)
+            localStorage.setItem('circle-features', JSON.stringify(features))
         }
     })
-
+    
     mapList.onmouseover = e => hoverMapList(e, hoverProject, map)
     mapList.onmouseleave = () => unHoverProject(map)
+    mapList.onclick = e => clickMapList(e, clickProjectCircle, map)
 
-    mapList.onclick = e => {
-        const listItem = getListItem(e)
-
-        const shimE = {
-            features: [
-                {
-                    id: listItem.dataset.circleid
-                }
-            ]
-        }
-
-        clickProjectCircle(shimE, map)
-    }
 })
