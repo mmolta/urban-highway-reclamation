@@ -14,15 +14,6 @@
 
 // "database"
 const completed = {
-    milwaukee: {
-        name: 'Park East Corridor',
-        location: 'Milwaukee, Wisconsin',
-        duration: '',
-        type: '',
-        cost: 25,
-        return: 2,
-        link: 'https://www.milwaukeeindependent.com/syndicated/park-east-corridor-freeway-teardown-helped-put-milwaukee-national-stage-summer/'
-    },
     rochester: {
         name: 'Inner Loop Jawn',
         location: 'Rochester, New York',
@@ -41,7 +32,7 @@ const completed = {
         return: 0,
         link: 'https://www.cnu.org/what-we-do/build-great-places/harbor-drive'
     },
-    milwaukeeTwo: {
+    milwaukee: {
         name: 'Park East Freeway',
         location: 'Milwaukee, Wisonsin',
         duration: 'One year',
