@@ -58,7 +58,7 @@ const makeCompletedHTML = props => {
             </li>
             
             <li>
-                duration: ${props.duration}
+                length: ${props.length} miles
             </li>
 
             <li>
@@ -66,7 +66,7 @@ const makeCompletedHTML = props => {
             </li>
 
             <li>
-                return: $${props.return} billion
+                return: ${props.return > 0 ? '$' + props.return + ' billion' : props.return}
             </li>
 
             <li>

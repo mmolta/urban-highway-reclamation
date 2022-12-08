@@ -10,46 +10,26 @@
     return: 0,
     link: ''
 }
+
+
+// GEOJSON Template (no comments in geojson file)
+{
+    "type": "Feature",
+    "properties": {
+        "name": "",
+        "location": "",
+        "length": "",
+        "type": "completed",
+        "cost": 0,
+        "return": 0,
+        "link": ""
+    },
+    "geometry": { "type": "Point", "coordinates": [0, 0]}
+},
 */
 
 // "database"
 const completed = {
-    rochester: {
-        name: 'Inner Loop Jawn',
-        location: 'Rochester, New York',
-        duration: '',
-        type: '',
-        cost: 0,
-        return: 0,
-        link: ''
-    },
-    portland: {
-        name: 'Harbor Drive',
-        location: 'Portland, Oregon',
-        duration: 'Four years',
-        type: '',
-        cost: 20,
-        return: 0,
-        link: 'https://www.cnu.org/what-we-do/build-great-places/harbor-drive'
-    },
-    milwaukee: {
-        name: 'Park East Freeway',
-        location: 'Milwaukee, Wisonsin',
-        duration: 'One year',
-        type: '',
-        cost: 45,
-        return: 0,
-        link: 'https://www.cnu.org/what-we-do/build-great-places/park-east-freeway'
-    },
-    boston: {
-        name: 'The Big Dig',
-        location: 'Boston, Massachus',
-        duration: '',
-        type: '',
-        cost: 0,
-        return: 0,
-        link: ''
-    },
     x: {
         name: '',
         location: '',
