@@ -53,6 +53,9 @@ a {
 .flex-center {
     justify-content: center;
 }
+.flex-align-start {
+    align-items: flex-start;
+}
 .flex-align-center {
     align-items: center;
 }
@@ -134,6 +137,10 @@ nav {
     max-width: 40rem;
     margin: 0 auto;
 }
+.section {
+    /* btn padding top & bottom (64px) + extra for line height */
+    scroll-margin-top: 80px;
+}
 .section-header {
     margin-top: 4rem;
     text-align: center;
@@ -178,23 +185,112 @@ nav {
 }
 .figures-number {
     font-size: 2.75rem;
-    font-weight: 700;
     color: var(--theme-accent);
+    text-shadow: var(--box-shadow);
+    margin-bottom: 8px;
 }
 /* End intro */
 
 
-/* @TEST: MAP */
-/*  */
+/* MAP */
+.map-section {
+    width: 100%;
+    /* 100vh - nav (80px), section-header (4rem), margin(16px) */
+    height: calc(100vh - 96px - 4rem);
+    margin-top: 16px;
+}
+.map-list {
+    width: 15%;
+    padding: 0;
+    margin: 0 8px;
+    max-height: 100%;
+    overflow-y: auto;
+}
+.map-list-item {
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--theme-text);
+}
+.map-list-item:hover {
+    cursor: pointer;
+    background-color: var(--theme-white);
+    color: var(--theme-main);
+}
+.map {
+    position: relative;
+    z-index: 1;
+    width: calc(85% - 32px);
+    height: 100%;
+    border-radius: var(--border-radius);
+}
+.legend {
+    position: absolute;
+    z-index: 2;
+    max-width: 250px;
+    bottom: 30px;
+    right: 10px;
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    color: var(--theme-main);
+    background-color: var(--theme-white);
+    /* replicate mapbox box shadow */
+    box-shadow: 0 0 0 2px rgba(0,0,0,.1);
+}
+.map-toggles-label {
+    cursor: pointer;
+    margin: 16px 0;
+}
+.map-toggle-symbol {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px 0 16px;
+    border-radius: var(--border-radius);
+}
+.map-toggle-symbol-complete {
+    background-color: var(--theme-accent);
+}
+.map-toggle-symbol-planned {
+    background-color: var(--theme-yellow);
+}
+.mapboxgl-popup-content {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.95rem;
+    padding: 0;
+    background: transparent;
+    /* border looks like road lines. top/bottom or left/right...? */
+    border-left: 5px dashed var(--theme-text);
+    border-right: 5px dashed var(--theme-text);
+}
+.popup-list {
+    padding: 16px;
+}
+.popup-list li {
+    margin-bottom: 4px;
+}
+.popup-completed {
+    color: var(--theme-white);
+    background-color: var(--theme-accent);
+}
+.popup-planned {
+    background-color: var(--theme-yellow);
+    color: var(--theme-main);
+}
+.popup-planned a {
+    color: var(--theme-main);
+}
+.popup-title, .popup-subtitle {
+    line-height: initial;
+}
+.popup-subtitle {
+    font-size: small;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+/* END Map  */
 
 
 /* Projects */
-.project-section {
-    width: 90%;
-    margin: 0 auto;
-    /* btn padding top & bottom (64px) + extra for line height */
-    scroll-margin-top: 80px;
-}
+/* @TODO: deprecate? */
 .projects-container {
     margin-top: 40px;
 }
@@ -208,7 +304,6 @@ nav {
     width: 75px;
 }
 .project-card {
-    margin-right: 2%;
     margin-bottom: 3%;
     padding: 4px;
     border: 1px solid var(--theme-accent);

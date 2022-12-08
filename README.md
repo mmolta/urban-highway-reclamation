@@ -7,12 +7,13 @@ What is the point of this?
         - you don't need to be wealthy, or elite to do the work and see the benefits and improvements.
         - Greenville, carolina bridge project has the best quote. The town was dying, downtown was decaying, development was happening 
 
+## NOTES
+- projects.geojson is my database
+    - create tileset with it. it contains all project info
 
 ## TODO
-    - top of projects section add a row of filters
-        - icon, checkbox, label
-        - default to all on
-        - teaches people what the icons mean and establishes association in a visual, interactive way 
+
+
 ## CNU main source
 Helpful repository that has most of the information, but struggles to effectively communicate because:
     - scope is too wide
