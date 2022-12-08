@@ -36,12 +36,7 @@ map.on('load', () => {
         const loaded = e.isSourceLoaded
         const visibilityEvent = e.sourceDataType
         const listLoaded = localStorage.getItem('list-loaded')
-        console.log(listLoaded)
 
-        // @NOTE: for map click, I could place
-        // the circleFeatures on localStorage
-        // and then select from there for the mapList click event
-            // or just do another queryRendered...
         if(!visibilityEvent && !listLoaded && loaded) {
             const circleFeatures = map.queryRenderedFeatures({
                 layers: ['project-circles']

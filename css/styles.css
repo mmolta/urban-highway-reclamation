@@ -253,15 +253,16 @@ nav {
     background-color: var(--theme-yellow);
 }
 .mapboxgl-popup-content {
-    border-radius: var(--border-radius);
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 0.95rem;
     padding: 0;
-    border: 2px solid var(--theme-white);
+    background: transparent;
+    /* border looks like road lines. top/bottom or left/right...? */
+    border-top: 4px dashed var(--theme-text);
+    border-bottom: 4px dashed var(--theme-text);
 }
 .popup-list {
     padding: 16px;
-    border-radius: var(--border-radius);
 }
 .popup-list li {
     margin-bottom: 4px;

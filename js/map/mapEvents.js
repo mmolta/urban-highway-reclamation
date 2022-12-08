@@ -56,7 +56,7 @@ const makeCompletedHTML = props => {
                 <h3 class="popup-title">${props.name}</h3>
                 <h4 class="popup-subtitle">${props.location}</h4>
             </li>
-
+            
             <li>
                 duration: ${props.duration}
             </li>
