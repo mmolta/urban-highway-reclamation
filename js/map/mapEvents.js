@@ -66,7 +66,7 @@ const makeCompletedHTML = props => {
             </li>
 
             <li>
-                return: ${props.return > 0 ? '$' + props.return + ' billion' : props.return}
+                impact: ${props.impact}
             </li>
 
             <li>

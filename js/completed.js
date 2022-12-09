@@ -18,10 +18,10 @@
     "properties": {
         "name": "",
         "location": "",
-        "length": "",
+        "length": 0,
         "type": "completed",
         "cost": 0,
-        "return": 0,
+        "imact": ""
         "link": ""
     },
     "geometry": { "type": "Point", "coordinates": [0, 0]}
