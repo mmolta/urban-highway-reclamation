@@ -20,7 +20,7 @@
     "properties": {
         "name": "",
         "location": "",
-        "type": "planned",
+        "type": "proposed",
         "link": ""
     },
     "geometry": { "type": "Point", "coordinates": [0, 0]}
