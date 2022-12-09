@@ -1,0 +1,201 @@
+{
+    "type": "FeatureCollection",
+    "name": "projects",
+    "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::26912" } },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Park East Corridor",
+                "location": "Milwaukee, WI",
+                "length": 1,
+                "type": "completed",
+                "cost": 45,
+                "impact": "",
+                "link": "https://www.fhwa.dot.gov/ipd/project_profiles/wi_park_east_freeway.aspx"
+            },
+            "geometry": { "type": "Point", "coordinates": [-87.899371, 43.042932]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Harbor Drive",
+                "location": "Portland, OR",
+                "length": 0.7,
+                "type": "completed",
+                "cost": 20,
+                "impact": "",
+                "link": "https://www.cnu.org/what-we-do/build-great-places/harbor-drive"
+            },
+            "geometry": { "type": "Point", "coordinates": [-122.670255, 45.522265]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Big Dig",
+                "location": "Boston, MA",
+                "length": 7.8,
+                "type": "completed",
+                "cost": 14.8,
+                "impact": "",
+                "link": "https://www.fhwa.dot.gov/ipd/project_profiles/ma_boston_central_artery.aspx"
+            },
+            "geometry": { "type": "Point", "coordinates": [-71.057395, 42.363152]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Embarcedero Freeway",
+                "location": "San Francisco, CA",
+                "length": 1.2,
+                "type": "completed",
+                "cost": 50,
+                "impact": "",
+                "link": "https://www.cnu.org/what-we-do/build-great-places/embarcadero-freeway"
+            },
+            "geometry": { "type": "Point", "coordinates": [-122.249398, 37.787557]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "West Side Highway",
+                "location": "New York, NY",
+                "length": 5,
+                "type": "completed",
+                "cost": 380,
+                "impact": "",
+                "link": "http://www.preservenet.com/freeways/FreewaysWestSide.html"
+            },
+            "geometry": { "type": "Point", "coordinates": [-73.993511, 40.772845]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mandela Parkway",
+                "location": "Oakland, CA",
+                "length": 1.3,
+                "type": "completed",
+                "cost": 13,
+                "impact": "",
+                "link": "https://www.cnu.org/oakland-mandela-parkway"
+            },
+            "geometry": { "type": "Point", "coordinates": [-122.290006, 37.815495]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Riverfront Parkway",
+                "location": "Chattanooga, TN",
+                "length": 2.8,
+                "type": "completed",
+                "cost": 60,
+                "impact": "",
+                "link": "https://www.cnu.org/what-we-do/build-great-places/riverfront-parkway"
+            },
+            "geometry": { "type": "Point", "coordinates": [-85.319648, 35.042335]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Octavia Boulevard",
+                "location": "San Francisco, CA",
+                "length": 0.3,
+                "type": "completed",
+                "cost": 45,
+                "impact": "",
+                "link": "https://www.accessmagazine.org/spring-2006/building-boulevard/"
+            },
+            "geometry": { "type": "Point", "coordinates": [-122.423902, 37.773731]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Alaskan Way Viaduct",
+                "location": "Seattle, WA",
+                "type": "developing",
+                "link": "https://wsdot.wa.gov/construction-planning/major-projects/alaskan-way-viaduct-replacement-program"
+            },
+            "geometry": { "type": "Point", "coordinates": [-122.336057, 47.602975]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Inner Loop",
+                "location": "Rochester, NY",
+                "type": "developing",
+                "link": "https://www.fhwa.dot.gov/ipd/project_profiles/ny_freeway_to_boulvard_rochester.aspx"
+            },
+            "geometry": { "type": "Point", "coordinates": [-77.595756, 43.158985] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Route 34",
+                "location": "New Haven, CT",
+                "type": "developing",
+                "link": "https://downtowncrossingnewhaven.com/benefits/"
+            },
+            "geometry": { "type": "Point", "coordinates": [-72.928932, 41.302723]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Niagara Scenic Parkway",
+                "location": "Niagara Falls, NY",
+                "type": "developing",
+                "link": "https://www.cnu.org/what-we-do/build-great-places/niagara-scenic-parkway"
+            },
+            "geometry": { "type": "Point", "coordinates": [-79.028650, 43.175946]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sheridan Expressway",
+                "location": "The Bronx, NY",
+                "type": "developing",
+                "link": "https://www.governor.ny.gov/news/governor-hochul-announces-completion-phase-one-17-billion-hunts-point-access-improvement"
+            },
+            "geometry": { "type": "Point", "coordinates": [-73.883946, 40.832883]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Interstate 375",
+                "location": "Detroit, MI",
+                "type": "proposed",
+                "link": "https://www.cnu.org/what-we-do/build-great-places/i-375"
+            },
+            "geometry": { "type": "Point", "coordinates": [-83.039966, 42.338573]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "I-81 Viaduct",
+                "location": "Syracuse, NY",
+                "type": "proposed",
+                "link": "https://webapps.dot.ny.gov/i-81-viaduct-project-overview"
+            },
+            "geometry": { "type": "Point", "coordinates": [-76.142915, 43.034296]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "I-35",
+                "location": "Austin, TX",
+                "type": "proposed",
+                "link": "https://reconnectaustin.com/"
+            },
+            "geometry": { "type": "Point", "coordinates": [-97.734941, 30.264770]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Akron Innerbelt",
+                "location": "Akron, OH",
+                "type": "proposed",
+                "link": "https://www.akroninnerbelt.com/"
+            },
+            "geometry": { "type": "Point", "coordinates": [-81.527564, 41.080812]}
+        }
+    ]
+}

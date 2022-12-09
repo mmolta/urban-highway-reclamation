@@ -10,7 +10,9 @@ What is the point of this?
 ## NOTES
 
 ## TODO
-- set up map filter (or get rid of it. Two data types, is it even needed?)
+- fix duplicate ID's
+    - nuclear option: use promote ID as mentioned here: https://stackoverflow.com/questions/56493095/mapbox-layer-features-duplicate-ids
+- set up map filter
 - glossary terms
 - paste references
 - data entry
