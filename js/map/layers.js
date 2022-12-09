@@ -13,7 +13,8 @@ const projectsLayer = {
         'circle-color': ['match',
             ['get', 'type'],
             'completed', '#1D7874',
-            'planned', '#EFCB68',
+            'developing', '#EFCB68',
+            'planned', '#BDADEA',
             '#fff'
         ],
         'circle-stroke-width': 1,

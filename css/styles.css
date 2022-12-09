@@ -25,11 +25,10 @@ a {
 :root {
     --theme-main: #2A2922;
     --theme-accent: #1D7874;
+    --theme-yellow: #EFCB68;
+    --theme-purple: #BDADEA;
     --theme-white: #FDFFFC;
     --theme-text: #DADCD8;
-    --theme-yellow: #EFCB68;
-    --theme-purple: #7A6F9B;
-    --theme-green: #4B7F52;
 
     --border-radius: 8px;
 
@@ -74,9 +73,6 @@ a {
 }
 .accent {
     color: var(--theme-accent);
-}
-.green {
-    color: var(--theme-green);
 }
 /* End General */
 
@@ -249,8 +245,11 @@ nav {
 .map-toggle-symbol-complete {
     background-color: var(--theme-accent);
 }
-.map-toggle-symbol-planned {
+.map-toggle-symbol-developing {
     background-color: var(--theme-yellow);
+}
+.map-toggle-symbol-planned {
+    background-color: var(--theme-purple);
 }
 .mapboxgl-popup-content {
     font-family: 'Source Sans Pro', sans-serif;
