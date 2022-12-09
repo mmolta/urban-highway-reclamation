@@ -75,7 +75,7 @@ const makeCompletedHTML = props => {
         </ul>
     `
 }
-const makePlannedHTML = props => {
+const makeProposedHTML = props => {
     return `
         <ul class="list-unstyled popup-list popup-${props.type}">
             <li>
@@ -91,7 +91,7 @@ const makePlannedHTML = props => {
 }
 const clickProjectCircle = (e, map) => {
     const project = e.features[0].properties
-    const html = project.type === 'completed' ? makeCompletedHTML(project) : makePlannedHTML(project)
+    const html = project.type === 'completed' ? makeCompletedHTML(project) : makeProposedHTML(project)
 
     popup
     .setLngLat(e.lngLat || project.coords)

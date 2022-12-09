@@ -1,8 +1,8 @@
 // navigation events
 const sections = {
-    completed: null,
-    planned: null,
+    projects: null,
     glossary: null,
+    disclaimer: null,
     references: null
 }
 const clickNav = e => {
