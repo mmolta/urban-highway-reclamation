@@ -14,7 +14,7 @@
     "geometry": { "type": "Point", "coordinates": [0, 0]}
 },
 
-// GEOJSON Template - Planned
+// GEOJSON Template - Proposed
 {
     "type": "Feature",
     "properties": {
