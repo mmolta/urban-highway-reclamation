@@ -270,11 +270,15 @@ nav {
     color: var(--theme-white);
     background-color: var(--theme-accent);
 }
-.popup-planned {
+.popup-developing {
     background-color: var(--theme-yellow);
     color: var(--theme-main);
 }
-.popup-planned a {
+.popup-planned {
+    background-color: var(--theme-purple);
+    color: var(--theme-main);
+}
+.popup-developing a, .popup-planned a {
     color: var(--theme-main);
 }
 .popup-title, .popup-subtitle {
