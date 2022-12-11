@@ -7,8 +7,8 @@ const projectsLayer = {
     paint: {
         'circle-radius': ['case',
             ['boolean', ['feature-state', 'hover'], false],
-            8,
-            5
+            12,
+            8
         ],
         'circle-color': ['match',
             ['get', 'type'],

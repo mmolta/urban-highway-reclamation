@@ -13,6 +13,10 @@ What is the point of this?
 - fix duplicate ID's
     - nuclear option: use promote ID as mentioned here: https://stackoverflow.com/questions/56493095/mapbox-layer-features-duplicate-ids
 - set up map filter
+    - add project types?
+        - full removal: harbor drive, park east freeway
+        - section removal: everything else?
+        - is this worth it? or just as a note...?
 - glossary terms
 - paste references
 - data entry
