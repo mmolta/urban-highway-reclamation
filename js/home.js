@@ -22,7 +22,7 @@ const clickToTop = toTop => {
         else {
             toTop.style.opacity = '0%'
         }
-    }, { threshold: [0.2] })
+    }, { threshold: [0.1] })
 }
 
 // list items events
