@@ -3,7 +3,7 @@
     margin: 0;
 }
 body {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.65;
     background-color: var(--theme-main);
@@ -91,23 +91,23 @@ nav {
     color: var(--theme-main);
     border-bottom: 1px solid var(--theme-main);
 }
+.nav-btn {
+    border: none;
+    background: none;
+    padding: 24px 32px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.nav-btn:hover {
+    background-color: var(--theme-accent);
+    color: var(--theme-white);
+}
 .logo {
     cursor: pointer;
     margin: 0 16px;
 }
 .logo:hover {
     filter: hue-rotate(110deg);
-}
-.nav-btn {
-    border: none;
-    background: none;
-    padding: 24px 32px;
-    font-size: inherit;
-    cursor: pointer;
-}
-.nav-btn:hover {
-    background-color: var(--theme-accent);
-    color: var(--theme-white);
 }
 /* End Nav */
 
