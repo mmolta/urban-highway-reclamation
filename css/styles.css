@@ -152,9 +152,9 @@ nav {
     margin-top: 4rem;
 }
 .to-top {
+    position: fixed;
     font-family: 'Overpass', sans-serif;
     cursor: pointer;
-    position: fixed;
     right: 32px;
     bottom: 16px;
     width: 2.5rem;
@@ -302,74 +302,12 @@ nav {
 /* END Map  */
 
 
-/* Projects */
-/* @TODO: deprecate? */
-.projects-container {
-    margin-top: 40px;
+
+/* Glossary */
+.glossary-list li {
+    margin-bottom: 2rem;
 }
-.project-toggles-form {
-    margin-top: 40px;
-}
-.toggles-label {
-    margin-right: 80px;
-}
-.checkbox-img {
-    width: 75px;
-}
-.project-card {
-    margin-bottom: 3%;
-    padding: 4px;
-    border: 1px solid var(--theme-accent);
-    border-radius: var(--border-radius);
-}
-.project-card:hover .project-img {
-    transform: scale(1.15, 1.15);
-}
-.project-img {
-    width: 150px;
-    border-top-left-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
-    transition: transform 0.75s;
-}
-.project-list {
-    padding: 16px;
-    background-color: var(--theme-accent);
-    color: var(--theme-white);
-    border-radius: var(--border-radius);
-    margin-left: 8px;
-}
-.project-title, .project-subtitle {
-    line-height: initial;
-}
-.project-subtitle {
-    font-size: small;
-    font-weight: 300;
-    margin-bottom: 8px;
-}
-.project-future {
-    background-color: var(--theme-purple);
-    background-color: var(--theme-green);
-    border-radius: var(--border-radius);
-    color: var(--theme-main);
-    margin-right: 2%;
-    margin-bottom: 3%;
-}
-.project-titles-container {
-    padding: 16px;
-    color: var(--theme-white);
-}
-.link-dark {
-    color: var(--theme-main);
-}
-.project-future-list {
-    position: relative;
-    z-index: 1;
-    padding: 8px 16px;
-    background-color: var(--theme-white);
-    color: var(--theme-main);
-    border-radius: var(--border-radius);
-}
-/* End Projects */
+/* END Glossary */
 
 
 
