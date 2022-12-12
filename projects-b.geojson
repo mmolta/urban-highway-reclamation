@@ -11,7 +11,7 @@
                 "length": 1,
                 "type": "completed",
                 "cost": 45,
-                "impact": "180% increase in land valuation--attracted over 1 billion in private investment--created three new neighborhoods",
+                "impact": "180% increase in land valuation--Attracted over 1 billion in private investment--Created three new neighborhoods",
                 "link": "https://www.fhwa.dot.gov/ipd/project_profiles/wi_park_east_freeway.aspx"
             },
             "geometry": { "type": "Point", "coordinates": [-87.899371, 43.042932]}
@@ -24,7 +24,7 @@
                 "length": 0.7,
                 "type": "completed",
                 "cost": 20,
-                "impact": "The first full freeway removal project in America--removal resulted in a 37-acre park--led a resurgence in downtown housing and development",
+                "impact": "The first full freeway removal project in America--Created a 37-acre waterfront park--Led a resurgence in downtown housing and development",
                 "link": "https://www.cnu.org/what-we-do/build-great-places/harbor-drive"
             },
             "geometry": { "type": "Point", "coordinates": [-122.670255, 45.522265]}
@@ -37,7 +37,7 @@
                 "length": 7.8,
                 "type": "completed",
                 "cost": 14.8,
-                "impact": "12% reduction in citywide CO levels--45 new parks and plazas including 100 acre Spectacle Island parks--created the Rose Kennedy Greenway--$7 billion in private investment--43,000 jobs--7,770 new housing units with 1,000 being affordable housing",
+                "impact": "12% reduction in citywide CO levels--45 new parks and plazas--$7 billion in private investment",
                 "link": "https://www.fhwa.dot.gov/ipd/project_profiles/ma_boston_central_artery.aspx"
             },
             "geometry": { "type": "Point", "coordinates": [-71.057395, 42.363152]}
@@ -50,7 +50,7 @@
                 "length": 1.2,
                 "type": "completed",
                 "cost": 50,
-                "impact": "100 acres of freed-up land created a new public plaza and waterfront promenade--51% increase in housing--23% increase in jobs--new streetcar line in the boulevard that replaced the freeway",
+                "impact": "100 acres of freed-up land--created a new public plaza and waterfront promenade--51% increase in housing",
                 "link": "https://www.cnu.org/what-we-do/build-great-places/embarcadero-freeway"
             },
             "geometry": { "type": "Point", "coordinates": [-122.249398, 37.787557]}
@@ -76,7 +76,7 @@
                 "length": 1.3,
                 "type": "completed",
                 "cost": 13,
-                "impact": "Reconnected West Oakland--38% decrease in nitrogen oxide levels--25% decrease in black carbon--created walkable space with trees, lawns, paths and bike lanes",
+                "impact": "Reconnected West Oakland--38% decrease in nitrogen oxide levels--25% decrease in black carbon",
                 "link": "https://www.cnu.org/oakland-mandela-parkway"
             },
             "geometry": { "type": "Point", "coordinates": [-122.290006, 37.815495]}
@@ -89,7 +89,7 @@
                 "length": 2.8,
                 "type": "completed",
                 "cost": 60,
-                "impact": "Created four new intersections to allow connection Tennessee River trail system--millions of dollars in invested in the area",
+                "impact": "Created four new intersections to allow connection Tennessee River trail system--Millions of dollars in invested in the area",
                 "link": "https://www.cnu.org/what-we-do/build-great-places/riverfront-parkway"
             },
             "geometry": { "type": "Point", "coordinates": [-85.319648, 35.042335]}
@@ -102,7 +102,7 @@
                 "length": 0.3,
                 "type": "completed",
                 "cost": 45,
-                "impact": "Replaced a stretch of double-decker freeway with a multi-way, tree-lined boulevard--Established a new park, Hayes Green",
+                "impact": "Replaced a stretch of double-decker freeway with a multi-way boulevard--Established a new park, Hayes Green",
                 "link": "https://www.accessmagazine.org/spring-2006/building-boulevard/"
             },
             "geometry": { "type": "Point", "coordinates": [-122.423902, 37.773731]}
@@ -163,7 +163,7 @@
                 "name": "Interstate 375",
                 "location": "Detroit, MI",
                 "type": "proposed",
-                "link": "https://www.cnu.org/what-we-do/build-great-places/i-375"
+                "link": "https://detroitmi.gov/departments/planning-and-development-department/neighborhood-plans/central-design-region/i-375-conversion-project"
             },
             "geometry": { "type": "Point", "coordinates": [-83.039966, 42.338573]}
         },

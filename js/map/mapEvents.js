@@ -51,42 +51,41 @@ const popup = new mapboxgl.Popup()
 
 const makeCompletedHTML = props => {
     return `
-        <ul class="list-unstyled popup-list popup-${props.type}">
-            <li>
+        <div class="popup-div">
+            <div class="popup-header popup-${props.type}">
                 <h3 class="popup-title">${props.name}</h3>
                 <h4 class="popup-subtitle">${props.location}</h4>
-            </li>
-            
-            <li>
-                length: ${props.length} miles
-            </li>
-
-            <li>
-                cost: $${props.cost} million
-            </li>
-
-            <li>
-                impact: ${props.impact}
-            </li>
-
-            <li>
-                <a href="${props.link}" target="_blank" rel="noopener noreferrer">view project</a>
-            </li>
-        </ul>
+            </div>
+            <ul class="list-unstyled popup-list">    
+                <li>
+                    length: ${props.length} miles
+                </li>
+                <li>
+                    cost: $${props.cost} million
+                </li>
+                <li>
+                    impact:<ul>${props.impact.split('--').map(i => `<li>${i}</li>`).join('')}</ul>
+                </li>
+                <li>
+                    <a href="${props.link}" target="_blank" rel="noopener noreferrer">view project</a>
+                </li>
+            </ul>                
+        </div>
     `
 }
 const makeProposedHTML = props => {
     return `
-        <ul class="list-unstyled popup-list popup-${props.type}">
-            <li>
+        <div class="popup-div">
+            <div class="popup-header popup-${props.type}">
                 <h3 class="popup-title">${props.name}</h3>
                 <h4 class="popup-subtitle">${props.location}</h4>
-            </li>
-
-            <li>
-                <a href="${props.link}" target="_blank" rel="noopener noreferrer">view proposal</a>
-            </li>
-        </ul>
+            </div>
+            <ul class="list-unstyled popup-list">
+                <li>
+                    <a href="${props.link}" target="_blank" rel="noopener noreferrer">view proposal</a>
+                </li>
+            </ul>
+        </div>
     `
 }
 const clickProjectCircle = (e, map) => {

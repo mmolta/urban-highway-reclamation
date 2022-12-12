@@ -206,7 +206,7 @@ nav {
     margin-top: 16px;
 }
 .map-list {
-    width: 15%;
+    width: 20%;
     padding: 0;
     margin: 0 8px;
     max-height: 100%;
@@ -224,7 +224,7 @@ nav {
 .map {
     position: relative;
     z-index: 1;
-    width: calc(85% - 32px);
+    width: calc(80% - 32px);
     height: 100%;
     border-radius: var(--border-radius);
 }
@@ -266,15 +266,14 @@ nav {
     font-size: 0.95rem;
     padding: 0;
     background: transparent;
-    /* border looks like road lines. top/bottom or left/right...? */
+    /* it do be a road */
     border-left: 5px dashed var(--theme-text);
     border-right: 5px dashed var(--theme-text);
+    border-radius: 0;
+    z-index: 4;
 }
-.popup-list {
+.popup-header {
     padding: 16px;
-}
-.popup-list li {
-    margin-bottom: 4px;
 }
 .popup-completed {
     color: var(--theme-white);
@@ -288,6 +287,14 @@ nav {
     background-color: var(--theme-purple);
     color: var(--theme-main);
 }
+.popup-list {
+    background-color: var(--theme-main);
+    padding: 8px 16px;
+    color: var(--theme-text);
+}
+.popup-list li {
+    margin-bottom: 4px;
+}
 .popup-developing a, .popup-proposed a {
     color: var(--theme-main);
 }
@@ -297,7 +304,6 @@ nav {
 .popup-subtitle {
     font-size: small;
     font-weight: 300;
-    margin-bottom: 12px;
 }
 /* END Map  */
 
