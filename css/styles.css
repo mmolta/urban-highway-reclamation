@@ -130,10 +130,10 @@ nav {
 
 /* Main Column */
 .main {
-    padding: 24px 0;
+    padding: 32px 0;
 }
 .main p {
-    margin: 1.5rem auto;
+    margin: 2rem auto;
 }
 .main-column-text {
     width: 85%;
@@ -182,12 +182,12 @@ nav {
     display: block;
     text-align: right;
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 .figures-column {
     width: 23%;
     text-align: center;
-    margin: 1.5rem 0;
+    margin: 2rem 0;
 }
 .figures-number {
     font-size: 2.75rem;
