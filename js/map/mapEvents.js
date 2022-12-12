@@ -74,6 +74,10 @@ const makeCompletedHTML = props => {
     `
 }
 const makeProposedHTML = props => {
+// @TODO: add to list after details are added to tileset
+    //     <li>
+//     details:<ul>${props.details.split('--').map(i => `<li>${i}</li>`).join('')}</ul>)}
+// </li>
     return `
         <div class="popup-div">
             <div class="popup-header popup-${props.type}">
@@ -82,7 +86,7 @@ const makeProposedHTML = props => {
             </div>
             <ul class="list-unstyled popup-list">
                 <li>
-                    <a href="${props.link}" target="_blank" rel="noopener noreferrer">view proposal</a>
+                    <a href="${props.link}" target="_blank" rel="noopener noreferrer">view ${props.type === 'developing' ? 'project' : 'proposal'}</a>
                 </li>
             </ul>
         </div>

@@ -21,6 +21,7 @@
         "name": "",
         "location": "",
         "type": "proposed",
+        "details": "",
         "link": ""
     },
     "geometry": { "type": "Point", "coordinates": [0, 0]}
