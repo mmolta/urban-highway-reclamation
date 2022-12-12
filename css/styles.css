@@ -74,6 +74,9 @@ a {
 .accent {
     color: var(--theme-accent);
 }
+.smooth-scroll {
+    scroll-behavior: smooth;
+}
 /* End General */
 
 
@@ -184,6 +187,7 @@ nav {
 .figures-column {
     width: 23%;
     text-align: center;
+    margin: 1.5rem 0;
 }
 .figures-number {
     font-size: 2.75rem;
