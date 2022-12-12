@@ -11,7 +11,7 @@
                 "length": 1,
                 "type": "completed",
                 "cost": 45,
-                "impact": "",
+                "impact": "180% increase in land valuation--attracted over 1 billion in private investment--created three new neighborhoods",
                 "link": "https://www.fhwa.dot.gov/ipd/project_profiles/wi_park_east_freeway.aspx"
             },
             "geometry": { "type": "Point", "coordinates": [-87.899371, 43.042932]}
@@ -24,7 +24,7 @@
                 "length": 0.7,
                 "type": "completed",
                 "cost": 20,
-                "impact": "first full freeway removal project in America--removal resulted in a 37-acre park--led a resurgence in downtown housing and development",
+                "impact": "The first full freeway removal project in America--removal resulted in a 37-acre park--led a resurgence in downtown housing and development",
                 "link": "https://www.cnu.org/what-we-do/build-great-places/harbor-drive"
             },
             "geometry": { "type": "Point", "coordinates": [-122.670255, 45.522265]}
@@ -37,7 +37,7 @@
                 "length": 7.8,
                 "type": "completed",
                 "cost": 14.8,
-                "impact": "",
+                "impact": "12% reduction in citywide CO levels--45 new parks and plazas including 100 acre Spectacle Island parks--created the Rose Kennedy Greenway--$7 billion in private investment--43,000 jobs--7,770 new housing units with 1,000 being affordable housing",
                 "link": "https://www.fhwa.dot.gov/ipd/project_profiles/ma_boston_central_artery.aspx"
             },
             "geometry": { "type": "Point", "coordinates": [-71.057395, 42.363152]}
@@ -63,7 +63,7 @@
                 "length": 5,
                 "type": "completed",
                 "cost": 380,
-                "impact": "",
+                "impact": "Created a landscaped park alongside the Hudson--added bicycle lanes to West street--pedestrian friendly connection to the riverfront",
                 "link": "http://www.preservenet.com/freeways/FreewaysWestSide.html"
             },
             "geometry": { "type": "Point", "coordinates": [-73.993511, 40.772845]}
@@ -76,7 +76,7 @@
                 "length": 1.3,
                 "type": "completed",
                 "cost": 13,
-                "impact": "reconnected West Oakland--38% decrease in nitrogen oxide levels--25% decrease in black carbon--created walkable space with trees, lawns, paths and bike lanes",
+                "impact": "Reconnected West Oakland--38% decrease in nitrogen oxide levels--25% decrease in black carbon--created walkable space with trees, lawns, paths and bike lanes",
                 "link": "https://www.cnu.org/oakland-mandela-parkway"
             },
             "geometry": { "type": "Point", "coordinates": [-122.290006, 37.815495]}
@@ -89,7 +89,7 @@
                 "length": 2.8,
                 "type": "completed",
                 "cost": 60,
-                "impact": "",
+                "impact": "Created four new intersections to allow connection Tennessee River trail system--millions of dollars in invested in the area",
                 "link": "https://www.cnu.org/what-we-do/build-great-places/riverfront-parkway"
             },
             "geometry": { "type": "Point", "coordinates": [-85.319648, 35.042335]}
