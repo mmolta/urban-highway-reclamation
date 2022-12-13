@@ -61,7 +61,7 @@ const makeCompletedHTML = props => {
                     length: ${props.length} miles
                 </li>
                 <li>
-                    cost: $${props.cost} million
+                    cost: $${props.cost} ${props.name != 'The Big Dig' ? 'million' : 'billion'}
                 </li>
                 <li>
                     impact:<ul>${props.impact.split('--').map(i => `<li>${i}</li>`).join('')}</ul>
