@@ -230,7 +230,7 @@ nav {
 }
 .legend {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     max-width: 250px;
     bottom: 30px;
     right: 10px;
@@ -260,6 +260,9 @@ nav {
 }
 .map-toggle-symbol-proposed {
     background-color: var(--theme-purple);
+}
+.mapboxgl-popup {
+    z-index: 2;
 }
 .mapboxgl-popup-content {
     font-family: 'Source Sans Pro', sans-serif;
