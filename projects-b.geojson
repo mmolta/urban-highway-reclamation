@@ -124,7 +124,7 @@
                 "name": "Inner Loop",
                 "location": "Rochester, NY",
                 "type": "developing",
-                "details": "Freed up 5.7 acres of developable land along a walkable boulevard--",
+                "details": "East segment turned 12 lanes of highway into a boulevard and 5.7 of developable land--generated $229 million in economic development",
                 "link": "https://www.fhwa.dot.gov/ipd/project_profiles/ny_freeway_to_boulvard_rochester.aspx"
             },
             "geometry": { "type": "Point", "coordinates": [-77.595756, 43.158985] }
@@ -146,8 +146,8 @@
                 "name": "Niagara Scenic Parkway",
                 "location": "Niagara Falls, NY",
                 "type": "developing",
-                "details": "",
-                "link": "https://www.cnu.org/what-we-do/build-great-places/niagara-scenic-parkway"
+                "details": "Two miles of freeway will be replaced with a new Niagara Gorge State Park--Elevated section of Robert Moses Parkway removed in 2019",
+                "link": "https://www.dot.ny.gov/NSPRemoval"
             },
             "geometry": { "type": "Point", "coordinates": [-79.028650, 43.175946]}
         },
@@ -157,7 +157,7 @@
                 "name": "Sheridan Expressway",
                 "location": "The Bronx, NY",
                 "type": "developing",
-                "details": "",
+                "details": "Phase one of three is complete and takes thousands of trucks off local streets in the Bronx--The full project is expected to create 22,000 jobs",
                 "link": "https://www.governor.ny.gov/news/governor-hochul-announces-completion-phase-one-17-billion-hunts-point-access-improvement"
             },
             "geometry": { "type": "Point", "coordinates": [-73.883946, 40.832883]}
@@ -168,7 +168,7 @@
                 "name": "Interstate 375",
                 "location": "Detroit, MI",
                 "type": "proposed",
-                "details": "",
+                "details": "Plans to convert I-375 and Fisher Highway into a surface road--Will reconnect downtown Detroit to Lafayette Park and Eastern Market.",
                 "link": "https://detroitmi.gov/departments/planning-and-development-department/neighborhood-plans/central-design-region/i-375-conversion-project"
             },
             "geometry": { "type": "Point", "coordinates": [-83.039966, 42.338573]}
@@ -179,7 +179,7 @@
                 "name": "I-81 Viaduct",
                 "location": "Syracuse, NY",
                 "type": "proposed",
-                "details": "",
+                "details": "Replace a 1.4 mile viaduct through downtown Syracue--Implement The Community Grid, an accesible, multi-modal street plan to reunite downtown Syracuse",
                 "link": "https://webapps.dot.ny.gov/i-81-viaduct-project-overview"
             },
             "geometry": { "type": "Point", "coordinates": [-76.142915, 43.034296]}
@@ -190,7 +190,7 @@
                 "name": "I-35",
                 "location": "Austin, TX",
                 "type": "proposed",
-                "details": "",
+                "details": "A grassroots campaign to reclaim I-35 as a multi-modal boulevard and community space--January 25, 2022 TxDOT officially adoped a modified version of the plan",
                 "link": "https://reconnectaustin.com/"
             },
             "geometry": { "type": "Point", "coordinates": [-97.734941, 30.264770]}
@@ -201,7 +201,7 @@
                 "name": "Akron Innerbelt",
                 "location": "Akron, OH",
                 "type": "proposed",
-                "details": "",
+                "details": "Reclaim the decomissioned portion of the Akron innerbelt--Akron is working alongside community members on an inclusive plan",
                 "link": "https://www.akroninnerbelt.com/"
             },
             "geometry": { "type": "Point", "coordinates": [-81.527564, 41.080812]}
