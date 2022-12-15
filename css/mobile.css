@@ -1,8 +1,12 @@
+nav {
+    flex-wrap: wrap;
+}
 .logo {
-    margin: 0 8px;
+    width: 30px;
+    margin: 16px 8px 0 8px;
 }
 .nav-btn {
-    padding: 16px;
+    padding: 16px 8px;
     font-size: inherit;
 }
 .figures-wrapper {
@@ -14,4 +18,10 @@
 }
 .figures-number {
     font-size: 2.5rem;
+}
+.map-section {
+    flex-direction: column-reverse;
+}
+.map-list, .map {
+    width: 100%;
 }
