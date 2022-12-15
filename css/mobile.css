@@ -1,0 +1,17 @@
+.logo {
+    margin: 0 8px;
+}
+.nav-btn {
+    padding: 16px;
+    font-size: inherit;
+}
+.figures-wrapper {
+    flex-wrap: wrap;
+}
+.figures-column {
+    width: 40%;
+    border: none;
+}
+.figures-number {
+    font-size: 2.5rem;
+}
