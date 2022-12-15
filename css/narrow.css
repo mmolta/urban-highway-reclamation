@@ -1,0 +1,16 @@
+body {
+    font-size: 14px;
+}
+.extra-wide {
+    width: 100%;
+    margin-left: 0;
+}
+.figures-number {
+    font-size: 2rem;
+}
+/* .map-section {
+    flex-direction: column;
+}
+.map, .map-list {
+    width: 100%;
+} */
