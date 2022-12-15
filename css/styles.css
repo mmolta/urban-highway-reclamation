@@ -150,7 +150,7 @@ nav {
     max-width: 40rem;
     margin: 0 auto;
 }
-.section {
+.section, #background {
     /* btn padding top & bottom (64px) + extra for line height */
     scroll-margin-top: 80px;
 }
