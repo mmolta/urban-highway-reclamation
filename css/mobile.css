@@ -1,5 +1,6 @@
 nav {
     flex-wrap: wrap;
+    font-size: 0.9rem;
 }
 .logo {
     width: 30px;
