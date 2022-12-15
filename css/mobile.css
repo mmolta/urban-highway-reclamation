@@ -21,8 +21,15 @@ nav {
 }
 .map-section {
     flex-direction: column-reverse;
+    margin-top: 0;
 }
 .map-list, .map {
     width: 100%;
     margin: 0;
+}
+.map {
+    height: 60%;
+}
+.map-list {
+    height: 35%;
 }
