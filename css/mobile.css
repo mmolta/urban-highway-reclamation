@@ -24,4 +24,5 @@ nav {
 }
 .map-list, .map {
     width: 100%;
+    margin: 0;
 }
