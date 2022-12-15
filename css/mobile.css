@@ -1,6 +1,6 @@
 nav {
     flex-wrap: wrap;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 .logo {
     width: 30px;
@@ -36,7 +36,4 @@ nav {
 }
 footer .logo {
     display: none;
-}
-footer {
-    font-size: 0.8em;
 }
