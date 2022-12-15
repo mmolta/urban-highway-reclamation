@@ -33,3 +33,6 @@ nav {
 .map-list {
     height: 35%;
 }
+footer .logo {
+    display: none;
+}
