@@ -334,9 +334,5 @@ nav {
 
 
 /* Footer */
-footer {
-    padding: 32px;
-    background-color: var(--theme-white);
-    color: var(--theme-main);
-}
+
 /* End Footer */
