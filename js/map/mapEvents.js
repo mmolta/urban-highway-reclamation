@@ -56,7 +56,13 @@ const makeCompletedHTML = props => {
                 <h3 class="popup-title">${props.name}</h3>
                 <h4 class="popup-subtitle">${props.location}</h4>
             </div>
-            <ul class="list-unstyled popup-list">    
+            <ul class="list-unstyled popup-list">  
+                <li>
+                    <figure class="popup-figure">
+                        <img src="${props.imgSrc}" alt="${props.name} photo" class="popup-img" />
+                        <figcaption class="popup-figcaption">credit: <a href="${props.imgLink}">${props.caption}</a></figcaption>
+                    </figure>
+                </li>
                 <li>
                     length: ${props.length} miles
                 </li>
@@ -81,6 +87,12 @@ const makeProposedHTML = props => {
                 <h4 class="popup-subtitle">${props.location}</h4>
             </div>
             <ul class="list-unstyled popup-list">
+                <li>
+                    <figure class="popup-figure">
+                        <img src="${props.imgSrc}" alt="${props.name} photo" class="popup-img" />
+                        <figcaption class="popup-figcaption">credit: <a href="${props.imgLink}">${props.caption}</a></figcaption>
+                    </figure>
+                </li>
                 <li>
                     details:<ul>${props.details.split('--').map(i => `<li>${i}</li>`).join('')}</ul>
                 </li>

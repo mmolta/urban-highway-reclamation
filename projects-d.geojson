@@ -12,7 +12,10 @@
                 "type": "completed",
                 "cost": 45,
                 "impact": "180% increase in land valuation--Attracted over 1 billion in private investment--Created three new neighborhoods",
-                "link": "https://www.fhwa.dot.gov/ipd/project_profiles/wi_park_east_freeway.aspx"
+                "link": "https://www.fhwa.dot.gov/ipd/project_profiles/wi_park_east_freeway.aspx",
+                "imgLink": "https://city.milwaukee.gov/DCD/Projects/ParkEastredevelopment/Park-East-History",
+                "imgSrc": "https://city.milwaukee.gov/ImageLibrary/Groups/cityDCD/parkeast/images/1021highway.jpg?LargePhoto",
+                "caption": "Milwaukee"
             },
             "geometry": { "type": "Point", "coordinates": [-87.899371, 43.042932]}
         },
@@ -25,7 +28,10 @@
                 "type": "completed",
                 "cost": 20,
                 "impact": "The first full freeway removal project in America--Created a 37-acre waterfront park--Led a resurgence in downtown housing and development",
-                "link": "https://www.cnu.org/what-we-do/build-great-places/harbor-drive"
+                "link": "https://www.cnu.org/what-we-do/build-great-places/harbor-drive",
+                "imgLink": "https://en.wikipedia.org/wiki/Harbor_Drive",
+                "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Waterfront_Park%2C_Portland.jpg/450px-Waterfront_Park%2C_Portland.jpg",
+                "caption": "Wikipedia"
             },
             "geometry": { "type": "Point", "coordinates": [-122.670255, 45.522265]}
         },
@@ -38,7 +44,10 @@
                 "type": "completed",
                 "cost": 14.8,
                 "impact": "12% reduction in citywide CO levels--45 new parks and plazas--$7 billion in private investment",
-                "link": "https://www.fhwa.dot.gov/ipd/project_profiles/ma_boston_central_artery.aspx"
+                "link": "https://www.fhwa.dot.gov/ipd/project_profiles/ma_boston_central_artery.aspx",
+                "imgLink": "https://www.fhwa.dot.gov/ipd/project_profiles/ma_boston_central_artery.aspx",
+                "imgSrc": "https://www.fhwa.dot.gov/ipd/images/project_profiles/img_ma_boston_central_artery3.jpg",
+                "caption": "FHWA"
             },
             "geometry": { "type": "Point", "coordinates": [-71.057395, 42.363152]}
         },
@@ -51,7 +60,10 @@
                 "type": "completed",
                 "cost": 50,
                 "impact": "100 acres of freed-up land--created a new public plaza and waterfront promenade--51% increase in housing",
-                "link": "https://www.cnu.org/what-we-do/build-great-places/embarcadero-freeway"
+                "link": "https://www.cnu.org/what-we-do/build-great-places/embarcadero-freeway",
+                "imgLink": "https://en.wikipedia.org/wiki/California_State_Route_480",
+                "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Looking_SE_on_The_Embarcadero_and_Broadway_%28May_2011%29.jpg/330px-Looking_SE_on_The_Embarcadero_and_Broadway_%28May_2011%29.jpg",
+                "caption": "Wikipedia"
             },
             "geometry": { "type": "Point", "coordinates": [-122.249398, 37.787557]}
         },
@@ -64,7 +76,10 @@
                 "type": "completed",
                 "cost": 380,
                 "impact": "Created a landscaped park alongside the Hudson--added bicycle lanes to West street--pedestrian friendly connection to the riverfront",
-                "link": "http://www.preservenet.com/freeways/FreewaysWestSide.html"
+                "link": "http://www.preservenet.com/freeways/FreewaysWestSide.html",
+                "imgLink": "http://www.preservenet.com/freeways/FreewaysWestSide.html",
+                "imgSrc": "http://www.preservenet.com/freeways/NYWestAbove14ths.JPG",
+                "caption": "preservenet"
             },
             "geometry": { "type": "Point", "coordinates": [-73.993511, 40.772845]}
         },
@@ -77,7 +92,10 @@
                 "type": "completed",
                 "cost": 13,
                 "impact": "Reconnected West Oakland--38% decrease in nitrogen oxide levels--25% decrease in black carbon",
-                "link": "https://www.cnu.org/oakland-mandela-parkway"
+                "link": "https://www.cnu.org/oakland-mandela-parkway",
+                "imgLink": "https://www.cnu.org/oakland-mandela-parkway",
+                "imgSrc": "https://www.cnu.org/sites/default/files/maxresdefault.jpg",
+                "caption": "CNU"
             },
             "geometry": { "type": "Point", "coordinates": [-122.290006, 37.815495]}
         },
@@ -90,7 +108,10 @@
                 "type": "completed",
                 "cost": 60,
                 "impact": "Created four new intersections to allow connection Tennessee River trail system--Millions of dollars in invested in the area",
-                "link": "https://www.cnu.org/what-we-do/build-great-places/riverfront-parkway"
+                "link": "https://www.cnu.org/what-we-do/build-great-places/riverfront-parkway",
+                "imgLink": "https://www.cnu.org/what-we-do/build-great-places/riverfront-parkway",
+                "imgSrc": "https://www.cnu.org/sites/default/files/aerial_chattanooga_riverfront.jpg",
+                "caption": "CNU"
             },
             "geometry": { "type": "Point", "coordinates": [-85.319648, 35.042335]}
         },
@@ -103,7 +124,10 @@
                 "type": "completed",
                 "cost": 45,
                 "impact": "Replaced a stretch of double-decker freeway with a multi-way boulevard--Established a new park, Hayes Green",
-                "link": "https://www.accessmagazine.org/spring-2006/building-boulevard/"
+                "link": "https://www.accessmagazine.org/spring-2006/building-boulevard/",
+                "imgLink": "https://www.quora.com/How-did-Octavia-Boulevard-in-San-Francisco-get-designed",
+                "imgSrc": "https://qph.cf2.quoracdn.net/main-qimg-89dcb19929b5cf13406587318cf6219f-lq",
+                "caption": "Quora"
             },
             "geometry": { "type": "Point", "coordinates": [-122.423902, 37.773731]}
         },
@@ -114,7 +138,10 @@
                 "location": "Seattle, WA",
                 "type": "developing",
                 "details": "30 projects to transform Seattle's waterfront--Double-deck freeway demolished and replaced with tunnel in 2019",
-                "link": "https://wsdot.wa.gov/construction-planning/major-projects/alaskan-way-viaduct-replacement-program"
+                "link": "https://wsdot.wa.gov/construction-planning/major-projects/alaskan-way-viaduct-replacement-program",
+                "imgLink": "https://www.cnu.org/what-we-do/build-great-places/alaskan-way-viaduct",
+                "imgSrc": "https://www.cnu.org/sites/default/files/Seattle_AlakanWay_boulevard.jpg",
+                "caption": "CNU"
             },
             "geometry": { "type": "Point", "coordinates": [-122.336057, 47.602975]}
         },
@@ -125,7 +152,10 @@
                 "location": "Rochester, NY",
                 "type": "developing",
                 "details": "East segment turned 12 lanes of highway into a boulevard and 5.7 of developable land--generated $229 million in economic development",
-                "link": "https://www.fhwa.dot.gov/ipd/project_profiles/ny_freeway_to_boulvard_rochester.aspx"
+                "link": "https://www.fhwa.dot.gov/ipd/project_profiles/ny_freeway_to_boulvard_rochester.aspx",
+                "imgLink": "https://www.cnu.org/what-we-do/build-great-places/i-490-inner-loop",
+                "imgSrc": "https://www.cnu.org/sites/default/files/Rodchester2.jpg",
+                "caption": "CNU"
             },
             "geometry": { "type": "Point", "coordinates": [-77.595756, 43.158985] }
         },
@@ -136,7 +166,10 @@
                 "location": "New Haven, CT",
                 "type": "developing",
                 "details": "Will recover 10 acres of developable land in New Haven--2.4 acres of developable land already recovered",
-                "link": "https://downtowncrossingnewhaven.com/benefits/"
+                "link": "https://downtowncrossingnewhaven.com/benefits/",
+                "imgLink": "https://www.newhavenct.gov/government/departments-divisions/city-plan/plans-projects/downtown-crossing",
+                "imgSrc": "https://www.newhavenct.gov/home/showpublishedimage/374/637738981274900000",
+                "caption": "New Haven"
             },
             "geometry": { "type": "Point", "coordinates": [-72.928932, 41.302723]}
         },
@@ -147,7 +180,10 @@
                 "location": "Niagara Falls, NY",
                 "type": "developing",
                 "details": "Two miles of freeway will be replaced with a new Niagara Gorge State Park--Elevated section of Robert Moses Parkway removed in 2019",
-                "link": "https://www.dot.ny.gov/NSPRemoval"
+                "link": "https://www.dot.ny.gov/NSPRemoval",
+                "imgLink": "https://www.cnu.org/what-we-do/build-great-places/niagara-scenic-parkway",
+                "imgSrc": "https://www.cnu.org/sites/default/files/NiagaraFalls_now_after.jpg",
+                "caption": "CNU"
             },
             "geometry": { "type": "Point", "coordinates": [-79.028650, 43.175946]}
         },
@@ -158,7 +194,10 @@
                 "location": "The Bronx, NY",
                 "type": "developing",
                 "details": "Phase one of three is complete and takes thousands of trucks off local streets in the Bronx--The full project is expected to create 22,000 jobs",
-                "link": "https://www.governor.ny.gov/news/governor-hochul-announces-completion-phase-one-17-billion-hunts-point-access-improvement"
+                "link": "https://www.governor.ny.gov/news/governor-hochul-announces-completion-phase-one-17-billion-hunts-point-access-improvement",
+                "imgLink": "https://www.bxtimes.com/long-awaited-de-construction-of-sheridan-expressway-begins/",
+                "imgSrc": "https://www.bxtimes.com/wp-content/uploads/2018/10/40-sheridan-2018-10-05-bx01_z.jpg",
+                "caption": "Bronx Times"
             },
             "geometry": { "type": "Point", "coordinates": [-73.883946, 40.832883]}
         },
@@ -169,7 +208,10 @@
                 "location": "Detroit, MI",
                 "type": "proposed",
                 "details": "Plans to convert I-375 and Fisher Highway into a surface road--Will reconnect downtown Detroit to Lafayette Park and Eastern Market.",
-                "link": "https://detroitmi.gov/departments/planning-and-development-department/neighborhood-plans/central-design-region/i-375-conversion-project"
+                "link": "https://detroitmi.gov/departments/planning-and-development-department/neighborhood-plans/central-design-region/i-375-conversion-project",
+                "imgLink": "https://detroitmi.gov/departments/planning-and-development-department/neighborhood-plans/central-design-region/i-375-conversion-project",
+                "imgSrc": "https://detroitmi.gov/sites/detroitmi.localhost/files/2022-10/Project-Area.jpg",
+                "caption": "Detroit"
             },
             "geometry": { "type": "Point", "coordinates": [-83.039966, 42.338573]}
         },
@@ -180,7 +222,10 @@
                 "location": "Syracuse, NY",
                 "type": "proposed",
                 "details": "Replace a 1.4 mile viaduct through downtown Syracue--Implement The Community Grid, an accesible, multi-modal street plan to reunite downtown Syracuse",
-                "link": "https://webapps.dot.ny.gov/i-81-viaduct-project-overview"
+                "link": "https://webapps.dot.ny.gov/i-81-viaduct-project-overview",
+                "imgLink": "https://webapps.dot.ny.gov/i-81-viaduct-project-overview",
+                "imgSrc": "https://webapps.dot.ny.gov/sites/g/files/oee1081/files/styles/wysiwyg/public/media/2021/07/81-historic.jpg?itok=WVeUB09z",
+                "caption": "Syracue"
             },
             "geometry": { "type": "Point", "coordinates": [-76.142915, 43.034296]}
         },
@@ -191,7 +236,10 @@
                 "location": "Austin, TX",
                 "type": "proposed",
                 "details": "A grassroots campaign to reclaim I-35 as a multi-modal boulevard and community space--January 25, 2022 TxDOT officially adoped a modified version of the plan",
-                "link": "https://reconnectaustin.com/"
+                "link": "https://reconnectaustin.com/",
+                "imgLink": "https://reconnectaustin.com/",
+                "imgSrc": "https://reconnectatx.files.wordpress.com/2019/07/6thstreethigh.jpg",
+                "caption": "recconectaustin"
             },
             "geometry": { "type": "Point", "coordinates": [-97.734941, 30.264770]}
         },
@@ -202,7 +250,10 @@
                 "location": "Akron, OH",
                 "type": "proposed",
                 "details": "Reclaim the decomissioned portion of the Akron innerbelt--Akron is working alongside community members on an inclusive plan",
-                "link": "https://www.akroninnerbelt.com/"
+                "link": "https://www.akroninnerbelt.com/",
+                "imgLink": "https://www.akroninnerbelt.com/",
+                "imgSrc": "https://www.akroninnerbelt.com/sites/default/files/styles/rect_large/public/assets/featured/InnerbeltRedevlopmentSpace.jpg?h=9b71c980&itok=mYqlp4C8",
+                "caption": "Akron"
             },
             "geometry": { "type": "Point", "coordinates": [-81.527564, 41.080812]}
         }

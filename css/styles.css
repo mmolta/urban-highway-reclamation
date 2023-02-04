@@ -306,6 +306,7 @@ nav {
 }
 .mapboxgl-popup {
     z-index: 2;
+    max-width: 250px !important;
 }
 .mapboxgl-popup-content {
     font-family: 'Source Sans Pro', sans-serif;
@@ -350,6 +351,17 @@ nav {
 .popup-subtitle {
     font-size: small;
     font-weight: 300;
+}
+.popup-figure {
+    margin-bottom: var(--padding);
+}
+.popup-img {
+    border-radius: var(--border-radius);
+    width: 100%;
+}
+.popup-figcaption {
+    font-size: 0.75rem;
+    font-style: italic;
 }
 /* END Map  */
 
