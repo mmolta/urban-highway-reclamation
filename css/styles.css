@@ -136,11 +136,24 @@ nav {
 .main {
     padding: 48px 0;
 }
-.main-h3 {
+.main-details {
+    margin-bottom: 32px;
+}
+.main-summary {
+    border: 2px solid var(--theme-accent);
+    border-radius: var(--border-radius);
+    padding: var(--padding) 16px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+.main-details p {
+    padding: 0 var(--padding);
+}
+.summary-h3 {
+    display: inline-block;
+    width: 95%;
     text-align: center;
     font-weight: 500;
-    margin-top: 2rem;
-    margin-bottom: -2rem;
 }
 .main p {
     margin: 2rem auto;
@@ -189,7 +202,7 @@ nav {
 }
 .opening-quote-author {
     display: block;
-    text-align: right;
+    text-align: center;
     margin-top: 0;
     margin-bottom: 48px;
 }
