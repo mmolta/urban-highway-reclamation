@@ -356,7 +356,6 @@ nav {
     margin-bottom: var(--padding);
 }
 .popup-img {
-    border-radius: var(--border-radius);
     width: 100%;
 }
 .popup-figcaption {
