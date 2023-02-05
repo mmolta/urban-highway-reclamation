@@ -1,5 +1,6 @@
 // navigation events
 const sections = {
+    background: null,
     projects: null,
     glossary: null,
     disclaimer: null,
