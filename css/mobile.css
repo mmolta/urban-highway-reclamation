@@ -10,6 +10,9 @@ nav {
     padding: 16px 8px;
     font-size: inherit;
 }
+.summary-h3 {
+    width: 92%;
+}
 .figures-wrapper {
     flex-wrap: wrap;
 }
