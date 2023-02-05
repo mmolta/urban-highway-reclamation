@@ -60,7 +60,7 @@ const makeCompletedHTML = props => {
                 <li>
                     <figure class="popup-figure">
                         <img src="${props.imgSrc}" alt="${props.name} photo" class="popup-img" />
-                        <figcaption class="popup-figcaption">credit: <a href="${props.imgLink}">${props.caption}</a></figcaption>
+                        <figcaption class="popup-figcaption">credit: <a href="${props.imgLink}" target="_blank" rel="noopener noreferrer">${props.caption}</a></figcaption>
                     </figure>
                 </li>
                 <li>
@@ -90,7 +90,7 @@ const makeProposedHTML = props => {
                 <li>
                     <figure class="popup-figure">
                         <img src="${props.imgSrc}" alt="${props.name} photo" class="popup-img" />
-                        <figcaption class="popup-figcaption">credit: <a href="${props.imgLink}">${props.caption}</a></figcaption>
+                        <figcaption class="popup-figcaption">credit: <a href="${props.imgLink}" target="_blank" rel="noopener noreferrer">${props.caption}</a></figcaption>
                     </figure>
                 </li>
                 <li>
