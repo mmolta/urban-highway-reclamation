@@ -134,6 +134,22 @@
         {
             "type": "Feature",
             "properties": {
+                "name": "I-170 Spur",
+                "location": "Baltimore, MD",
+                "length": 1.34,
+                "type": "completed",
+                "cost": 8.5,
+                "impact": "removed abandonded western spur from downtown--space used to expand transit station parking",
+                "link": "https://www.aaroads.com/guides/i-170-md/",
+                "imgLink": "https://www.aaroads.com/wp-content/uploads/maps/mid-atlantic/i-170-baltimore-map.gif",
+                "imgSrc": "https://www.aaroads.com/guides/i-170-md/",
+                "caption": "aaroads"
+            },
+            "geometry": { "type": "Point", "coordinates": [-76.595854, 39.295394]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "name": "Alaskan Way Viaduct",
                 "location": "Seattle, WA",
                 "type": "developing",
@@ -200,6 +216,20 @@
                 "caption": "Bronx Times"
             },
             "geometry": { "type": "Point", "coordinates": [-73.883946, 40.832883]}
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CityMAP",
+                "location": "Dallas, TX",
+                "type": "developing",
+                "details": "Removes viaducts and creates mixed-use boulevards from stretches of I-30, I-35E and I-345--includes some additional highway lanes",
+                "link": "https://www.dallascitymap.com/#home",
+                "imgLink": "https://www.dmagazine.com/frontburner/2019/10/txdot-dallas-interstate-30-canyon/",
+                "imgSrc": "https://assets.dmagstatic.com/wp-content/uploads/2019/10/Screen-Shot-2019-10-31-at-10.14.19-AM.png",
+                "caption": "dmagazine"
+            },
+            "geometry": { "type": "Point", "coordinates": [-96.810981, 32.772244]}
         },
         {
             "type": "Feature",
