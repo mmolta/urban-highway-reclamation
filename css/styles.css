@@ -306,7 +306,7 @@ nav {
 }
 .mapboxgl-popup {
     z-index: 2;
-    max-width: 250px !important;
+    max-width: 300px !important;
 }
 .mapboxgl-popup-content {
     font-family: 'Source Sans Pro', sans-serif;
