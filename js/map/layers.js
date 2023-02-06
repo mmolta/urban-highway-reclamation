@@ -14,7 +14,7 @@ const projectsLayer = {
             ['get', 'type'],
             'completed', '#1D7874',
             'developing', '#EFCB68',
-            'proposed', '#BDADEA',
+            'planned', '#BDADEA',
             '#fff'
         ],
         'circle-stroke-width': 1,

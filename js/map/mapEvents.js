@@ -79,7 +79,7 @@ const makeCompletedHTML = props => {
         </div>
     `
 }
-const makeProposedHTML = props => {
+const makePlannedHTML = props => {
     return `
         <div class="popup-div">
             <div class="popup-header popup-${props.type}">
@@ -97,7 +97,7 @@ const makeProposedHTML = props => {
                     details:<ul>${props.details.split('--').map(i => `<li>${i}</li>`).join('')}</ul>
                 </li>
                 <li>
-                    <a href="${props.link}" target="_blank" rel="noopener noreferrer">view ${props.type === 'developing' ? 'project' : 'proposal'}</a>
+                    <a href="${props.link}" target="_blank" rel="noopener noreferrer">view ${props.type === 'developing' ? 'project' : 'plan'}</a>
                 </li>
             </ul>
         </div>
@@ -105,7 +105,7 @@ const makeProposedHTML = props => {
 }
 const clickProjectCircle = (e, map) => {
     const project = e.features[0].properties
-    const html = project.type === 'completed' ? makeCompletedHTML(project) : makeProposedHTML(project)
+    const html = project.type === 'completed' ? makeCompletedHTML(project) : makePlannedHTML(project)
 
     popup
     .setLngLat(e.lngLat || project.coords)

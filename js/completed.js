@@ -14,13 +14,13 @@
     "geometry": { "type": "Point", "coordinates": [0, 0]}
 },
 
-// GEOJSON Template - Proposed
+// GEOJSON Template - Planned
 {
     "type": "Feature",
     "properties": {
         "name": "",
         "location": "",
-        "type": "proposed",
+        "type": "planned",
         "details": "",
         "link": ""
     },

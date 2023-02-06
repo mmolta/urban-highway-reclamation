@@ -301,7 +301,7 @@ nav {
 .map-toggle-symbol-developing {
     background-color: var(--theme-yellow);
 }
-.map-toggle-symbol-proposed {
+.map-toggle-symbol-planned {
     background-color: var(--theme-purple);
 }
 .mapboxgl-popup {
@@ -326,7 +326,7 @@ nav {
     background-color: var(--theme-yellow);
     color: var(--theme-main);
 }
-.popup-proposed {
+.popup-planned {
     background-color: var(--theme-purple);
     color: var(--theme-main);
 }
@@ -342,7 +342,7 @@ nav {
 .popup-list li {
     margin-bottom: 4px;
 }
-.popup-developing a, .popup-proposed a {
+.popup-developing a, .popup-planned a {
     color: var(--theme-main);
 }
 .popup-title, .popup-subtitle {
