@@ -178,17 +178,18 @@ nav {
     scroll-margin-top: 80px;
 }
 .section-header {
-    margin-top: 4rem;
+    margin-top: 8rem;
+    font-size: 2em;
     text-align: center;
 }
 .section-hr {
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
 .to-top {
     position: fixed;
     font-family: 'Overpass', sans-serif;
     cursor: pointer;
-    right: 32px;
+    right: 16px;
     bottom: 16px;
     width: 2.5rem;
     border-top: 2px solid var(--theme-text);
@@ -243,16 +244,19 @@ nav {
 
 /* MAP */
 .map-section {
-    width: 100%;
-    /* 100vh - nav (80px), section-header (4rem), margin(16px) */
-    height: calc(100vh - 96px - 4rem);
-    margin-top: 16px;
+    width: auto;
+    /* 100vh - (nav (80px) + margin(16px) + padding(16px)) - section-header (4rem) */
+    height: calc(100vh - 112px - 4rem);
+    padding: 16px 48px;
 }
 .map-list {
+    overscroll-behavior: contain;
+    border-top: 4px dashed var(--theme-white);
+    border-bottom: 4px dashed var(--theme-white);
     width: 20%;
     padding: 0;
-    margin: 0 8px;
-    max-height: 100%;
+    margin-right: 8px;
+    height: calc(100% - 10px);
     overflow-y: auto;
 }
 .map-list-item {
@@ -367,8 +371,14 @@ nav {
 
 
 /* Glossary */
+.glossary-list {
+    margin-top: 2rem;
+}
 .glossary-list li {
     margin-bottom: 2rem;
+}
+.glossary-li-header {
+    color: var(--theme-purple);
 }
 /* END Glossary */
 
