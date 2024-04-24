@@ -385,5 +385,11 @@ nav {
 
 
 /* Footer */
-
+footer {
+    background-color: var(--theme-accent);
+    color: var(--theme-white);
+    padding: 48px 16px;
+    text-align: center;
+    margin-top: 32px;
+}
 /* End Footer */
