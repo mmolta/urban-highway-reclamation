@@ -81,6 +81,15 @@ a {
     width: 140%;
     margin-left: -20%;
 }
+.main-figure {
+    width: calc(100% - 16px);
+    margin: 0 auto;
+    font-size: 0.8em;
+}
+.main-figure img {
+    width: 100%;
+    border-radius: var(--border-radius);
+}
 /* End General */
 
 
@@ -157,13 +166,12 @@ nav {
 }
 .details-quote {
     display: block;
-    text-align: center;
     margin-bottom: 0;
     margin-top: 2rem;
 }
 .details-quote-author {
     display: block;
-    text-align: center;
+    text-align: right;
 }
 .main p {
     margin: 2rem auto;
