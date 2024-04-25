@@ -8,10 +8,10 @@ const makeTitle = props => {
 
     switch(props.type) {
         case 'completed':
-            factsText = `$${props.cost} ${props.name != 'The Big Dig' ? 'million' : 'billion'} | ${props.length} miles`
+            factsText = `$${props.cost} ${props.unit ? 'billion' : 'million'} | ${props.length} miles`
             break
         default:
-            const cost = props.cost ? `$${props.cost} (so far)` : null
+            const cost = props.cost ? `$${props.cost} (estimated)` : null
             const length = props.length ? `${props.length} miles` : null
         
             if(cost && length ) {
@@ -60,7 +60,7 @@ const makeFigure = props => {
     
     a.textContent = props.caption
     projA.textContent = 'view project'
-    capt.textContent = 'credit: '
+    capt.textContent = 'image credit: '
 
 
     capt.appendChild(a)

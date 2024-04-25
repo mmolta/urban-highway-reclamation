@@ -8,8 +8,8 @@
             "properties": {
                 "name": "Park East Corridor",
                 "location": "Milwaukee, WI",
-                "length": 1,
                 "type": "completed",
+                "length": 1,
                 "cost": 45,
                 "impact": "180% increase in land valuation--Attracted over 1 billion in private investment--Created three new neighborhoods",
                 "link": "https://www.fhwa.dot.gov/ipd/project_profiles/wi_park_east_freeway.aspx",
@@ -24,8 +24,8 @@
             "properties": {
                 "name": "Harbor Drive",
                 "location": "Portland, OR",
-                "length": 0.7,
                 "type": "completed",
+                "length": 0.7,
                 "cost": 20,
                 "impact": "The first full freeway removal project in America--Created a 37-acre waterfront park--Led a resurgence in downtown housing and development",
                 "link": "https://www.cnu.org/what-we-do/build-great-places/harbor-drive-removal",
@@ -40,9 +40,10 @@
             "properties": {
                 "name": "The Big Dig",
                 "location": "Boston, MA",
-                "length": 7.8,
                 "type": "completed",
+                "length": 7.8,
                 "cost": 14.8,
+                "unit": 1,
                 "impact": "12% reduction in citywide CO levels--45 new parks and plazas--$7 billion in private investment",
                 "link": "https://www.fhwa.dot.gov/ipd/project_profiles/ma_boston_central_artery.aspx",
                 "imgLink": "https://www.fhwa.dot.gov/ipd/project_profiles/ma_boston_central_artery.aspx",
@@ -56,8 +57,8 @@
             "properties": {
                 "name": "Embarcedero Freeway",
                 "location": "San Francisco, CA",
-                "length": 1.2,
                 "type": "completed",
+                "length": 1.2,
                 "cost": 50,
                 "impact": "100 acres of freed-up land--created a new public plaza and waterfront promenade--51% increase in housing",
                 "link": "https://www.cnu.org/what-we-do/build-great-places/embarcadero-freeway",
@@ -72,8 +73,8 @@
             "properties": {
                 "name": "West Side Highway",
                 "location": "New York, NY",
-                "length": 5,
                 "type": "completed",
+                "length": 5,
                 "cost": 380,
                 "impact": "Created a landscaped park alongside the Hudson--added bicycle lanes to West street--pedestrian friendly connection to the riverfront",
                 "link": "http://www.preservenet.com/freeways/FreewaysWestSide.html",
@@ -88,8 +89,8 @@
             "properties": {
                 "name": "Mandela Parkway",
                 "location": "Oakland, CA",
-                "length": 1.3,
                 "type": "completed",
+                "length": 1.3,
                 "cost": 13,
                 "impact": "Reconnected West Oakland--38% decrease in nitrogen oxide levels--25% decrease in black carbon",
                 "link": "https://www.cnu.org/oakland-mandela-parkway",
@@ -104,8 +105,8 @@
             "properties": {
                 "name": "Riverfront Parkway",
                 "location": "Chattanooga, TN",
-                "length": 2.8,
                 "type": "completed",
+                "length": 2.8,
                 "cost": 60,
                 "impact": "Created four new intersections to allow connection Tennessee River trail system--Millions of dollars in invested in the area",
                 "link": "https://www.cnu.org/what-we-do/build-great-places/riverfront-parkway",
@@ -120,8 +121,8 @@
             "properties": {
                 "name": "Octavia Boulevard",
                 "location": "San Francisco, CA",
-                "length": 0.3,
                 "type": "completed",
+                "length": 0.3,
                 "cost": 45,
                 "impact": "Replaced a stretch of double-decker freeway with a multi-way boulevard--Established a new park, Hayes Green",
                 "link": "https://www.accessmagazine.org/spring-2006/building-boulevard/",
@@ -136,8 +137,8 @@
             "properties": {
                 "name": "I-170 Spur",
                 "location": "Baltimore, MD",
-                "length": 1.34,
                 "type": "completed",
+                "length": 1.34,
                 "cost": 8.5,
                 "impact": "removed abandonded western spur from downtown--space used to expand transit station parking",
                 "link": "https://www.aaroads.com/guides/i-170-md/",
@@ -150,9 +151,28 @@
         {
             "type": "Feature",
             "properties": {
+                "name": "Inner Loop East",
+                "location": "Rochester, NY",
+                "type": "completed",
+                "cost": 22,
+                "length": 1.18,
+                "impact": "Freed up 5.7 acres of developable land which now includes 500+ housing using--generated $229 million in economic development--increased walking by 50% and biking by 60%",
+                "link": "https://www.fhwa.dot.gov/ipd/project_profiles/ny_freeway_to_boulvard_rochester.aspx",
+                "imgLink": "https://www.cnu.org/what-we-do/build-great-places/i-490-inner-loop",
+                "imgSrc": "https://www.cnu.org/sites/default/files/Rodchester2.jpg",
+                "caption": "CNU"
+            },
+            "geometry": { "type": "Point", "coordinates": [-77.597496, 43.154317] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "name": "Alaskan Way Viaduct",
                 "location": "Seattle, WA",
                 "type": "developing",
+                "length": 2.2,
+                "cost": 3.35,
+                "unit": 1,
                 "impact": "30 projects to transform Seattle's waterfront--Double-deck freeway demolished and replaced with tunnel in 2019",
                 "link": "https://wsdot.wa.gov/construction-planning/major-projects/alaskan-way-viaduct-replacement-program",
                 "imgLink": "https://www.cnu.org/what-we-do/build-great-places/alaskan-way-viaduct",
@@ -164,18 +184,18 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Inner Loop East",
+                "name": "Inner Loop North",
                 "location": "Rochester, NY",
-                "type": "completed",
-                "cost": 22,
-                "length": 1.18,
-                "impact": "Turned 12 lanes of highway into a boulevard and 5.7 acres of developable land--generated $229 million in economic development--increased walking by 50% and biking by 60%",
-                "link": "https://www.fhwa.dot.gov/ipd/project_profiles/ny_freeway_to_boulvard_rochester.aspx",
-                "imgLink": "https://www.cnu.org/what-we-do/build-great-places/i-490-inner-loop",
-                "imgSrc": "https://www.cnu.org/sites/default/files/Rodchester2.jpg",
-                "caption": "CNU"
+                "type": "developing",
+                "cost": 50,
+                "length": 1.5,
+                "impact": "Replaces the remaining 1.5 miles of inner loop that surrounds downtown Rochester with ped and bike friendly grid--Significant community input with dozens of workshops and online survey",
+                "link": "https://www.innerloopnorth.com/",
+                "imgLink": "https://www.innerloopnorth.com/concepts",
+                "imgSrc": "https://static.wixstatic.com/media/86b242_feba644956be4abfa515528cb75a1632~mv2.png/v1/fill/w_1113,h_448,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/86b242_feba644956be4abfa515528cb75a1632~mv2.png",
+                "caption": "Inner Loop North"
             },
-            "geometry": { "type": "Point", "coordinates": [-77.597496, 43.154317] }
+            "geometry": { "type": "Point", "coordinates": [-77.613077, 43.160578] }
         },
         {
             "type": "Feature",
