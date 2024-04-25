@@ -22,6 +22,9 @@ p {
 a {
     color: var(--theme-white);
 }
+img {
+    border-radius: var(--border-radius);
+}
 :root {
     --theme-main: #2A2922;
     --theme-accent: #1D7874;
@@ -80,6 +83,14 @@ a {
 .extra-wide {
     width: 140%;
     margin-left: -20%;
+}
+.main-figure {
+    width: calc(100% - 16px);
+    margin: 0 auto;
+    font-size: 0.8em;
+}
+.main-figure img {
+    width: 100%;
 }
 /* End General */
 
@@ -157,13 +168,12 @@ nav {
 }
 .details-quote {
     display: block;
-    text-align: center;
     margin-bottom: 0;
     margin-top: 2rem;
 }
 .details-quote-author {
     display: block;
-    text-align: center;
+    text-align: right;
 }
 .main p {
     margin: 2rem auto;
@@ -178,17 +188,18 @@ nav {
     scroll-margin-top: 80px;
 }
 .section-header {
-    margin-top: 4rem;
+    margin-top: 8rem;
+    font-size: 2em;
     text-align: center;
 }
 .section-hr {
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
 .to-top {
     position: fixed;
     font-family: 'Overpass', sans-serif;
     cursor: pointer;
-    right: 32px;
+    right: 16px;
     bottom: 16px;
     width: 2.5rem;
     border-top: 2px solid var(--theme-text);
@@ -216,43 +227,25 @@ nav {
     margin-top: 0;
     margin-bottom: 48px;
 }
-.figures-wrapper {
-    background-color: var(--theme-accent);
-    color: var(--theme-text);
-    border-radius: var(--border-radius);
-}
-.figures-column {
-    width: 23%;
-    padding: 0 16px;
-    border-right: 4px dashed var(--theme-white);
-    text-align: center;
-    margin: 2rem 0;
-}
-.figures-column:last-of-type {
-    border-right: none;
-}
-.figures-number {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--theme-white);
-    margin-bottom: 4px;
-}
 /* End intro */
 
 
 
 /* MAP */
 .map-section {
-    width: 100%;
-    /* 100vh - nav (80px), section-header (4rem), margin(16px) */
-    height: calc(100vh - 96px - 4rem);
-    margin-top: 16px;
+    width: auto;
+    /* 100vh - (nav (80px) + margin(16px) + padding(16px)) - section-header (4rem) */
+    height: calc(100vh - 112px - 4rem);
+    padding: 16px 48px;
 }
 .map-list {
+    overscroll-behavior: contain;
+    /* border-top: 4px dashed var(--theme-white);
+    border-bottom: 4px dashed var(--theme-white); */
     width: 20%;
     padding: 0;
-    margin: 0 8px;
-    max-height: 100%;
+    margin-right: 8px;
+    height: calc(100% - 10px);
     overflow-y: auto;
 }
 .map-list-item {
@@ -306,7 +299,12 @@ nav {
 }
 .mapboxgl-popup {
     z-index: 2;
-    max-width: 300px !important;
+    max-width: 500px !important;
+}
+.hover-popup-title {
+    padding: 16px;
+    font-size: 1em;
+    color: var(--theme-main);
 }
 .mapboxgl-popup-content {
     font-family: 'Source Sans Pro', sans-serif;
@@ -314,9 +312,6 @@ nav {
     padding: 0;
     /* border-radius: 0; */
     z-index: 4;
-}
-.popup-header {
-    padding: 16px;
 }
 .popup-completed {
     color: var(--theme-white);
@@ -330,20 +325,11 @@ nav {
     background-color: var(--theme-purple);
     color: var(--theme-main);
 }
-.popup-list {
-    background-color: var(--theme-main);
-    /* compensate 4px border to equal 16px padding line w/header */
-    padding: 8px 12px;
-    color: var(--theme-text);
-    /* it do be a road */
-    border-left: 4px dashed var(--theme-text);
-    border-right: 4px dashed var(--theme-text);
+.popup-header {
+    padding: 16px;
 }
-.popup-list li {
-    margin-bottom: 4px;
-}
-.popup-developing a, .popup-planned a {
-    color: var(--theme-main);
+.popup-title {
+    font-size: 1.5em;
 }
 .popup-title, .popup-subtitle {
     line-height: initial;
@@ -352,28 +338,82 @@ nav {
     font-size: small;
     font-weight: 300;
 }
+.popup-body {
+    border-left: 4px dashed var(--theme-white);
+    border-right: 4px dashed var(--theme-white);
+    background-color: var(--theme-main);
+}
+.impact-container {
+    width: calc(50% - 32px);
+    padding: 8px 16px;
+    color: var(--theme-text);
+}
+.impact-header {
+    margin-bottom: 16px;
+}
+.popup-list li {
+    margin-bottom: 16px;
+}
+.popup-developing a, .popup-planned a {
+    color: var(--theme-main);
+}
 .popup-figure {
-    margin-bottom: var(--padding);
+    padding: 8px 16px;
+    width: calc(50% - 32px);
+    border-right: 4px dashed var(--theme-white);
 }
 .popup-img {
     width: 100%;
 }
 .popup-figcaption {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-style: italic;
+}
+.project-link {
+    padding: 8px;
+    border-radius: var(--border-radius);
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    margin-top: 16px;
+}
+.project-link-completed {
+    border: 2px solid var(--theme-accent);
+}
+.project-link-developing {
+    border: 2px solid var(--theme-yellow);
+}
+.project-link-planned {
+    border: 2px solid var(--theme-purple);
+}
+.impact-list {
+    margin-top: 16px;
 }
 /* END Map  */
 
 
 
 /* Glossary */
+.glossary-list {
+    margin-top: 2rem;
+}
 .glossary-list li {
     margin-bottom: 2rem;
+}
+.glossary-li-header {
+    color: var(--theme-purple);
 }
 /* END Glossary */
 
 
 
 /* Footer */
-
+footer {
+    background-color: var(--theme-accent);
+    color: var(--theme-white);
+    padding: 48px 16px;
+    text-align: center;
+    margin-top: 32px;
+}
 /* End Footer */
