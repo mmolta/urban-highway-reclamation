@@ -28,7 +28,7 @@
                 "type": "completed",
                 "cost": 20,
                 "impact": "The first full freeway removal project in America--Created a 37-acre waterfront park--Led a resurgence in downtown housing and development",
-                "link": "https://www.cnu.org/what-we-do/build-great-places/harbor-drive",
+                "link": "https://www.cnu.org/what-we-do/build-great-places/harbor-drive-removal",
                 "imgLink": "https://en.wikipedia.org/wiki/Harbor_Drive",
                 "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Waterfront_Park%2C_Portland.jpg/450px-Waterfront_Park%2C_Portland.jpg",
                 "caption": "Wikipedia"
@@ -269,7 +269,7 @@
                 "link": "https://reconnectaustin.com/",
                 "imgLink": "https://reconnectaustin.com/",
                 "imgSrc": "https://reconnectatx.files.wordpress.com/2019/07/6thstreethigh.jpg",
-                "caption": "recconectaustin"
+                "caption": "Reconnect Austin"
             },
             "geometry": { "type": "Point", "coordinates": [-97.734941, 30.264770]}
         },
@@ -281,9 +281,9 @@
                 "type": "planned",
                 "details": "Reclaim the decomissioned portion of the Akron innerbelt--Akron is working alongside community members on an inclusive plan",
                 "link": "https://www.akroninnerbelt.com/",
-                "imgLink": "https://www.akroninnerbelt.com/",
-                "imgSrc": "https://www.akroninnerbelt.com/sites/default/files/styles/rect_large/public/assets/featured/InnerbeltRedevlopmentSpace.jpg?h=9b71c980&itok=mYqlp4C8",
-                "caption": "Akron"
+                "imgLink": "https://spectrumnews1.com/oh/columbus/news/2022/06/21/akron-seeks-input-for-innerbelt-redevelopment",
+                "imgSrc": "https://s7d2.scene7.com/is/image/TWCNews/innerbelt_aerialdata2022-_06212022_1",
+                "caption": "Spectrum News"
             },
             "geometry": { "type": "Point", "coordinates": [-81.527564, 41.080812]}
         }

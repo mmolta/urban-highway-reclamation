@@ -50,21 +50,35 @@ const unHoverProject = map => {
 const popup = new mapboxgl.Popup()
 
 const makeTitle = props => {
-    const div = document.createElement('div')
+    const wrapper = document.createElement('div')
+    const textWrapper = document.createElement('div')
     const title = document.createElement('h3')
     const subtitle = document.createElement('h4')
+    const facts = document.createElement('span')
+    let factsText;
 
-    div.classList.add('popup-header', `popup-${props.type}`)
+    switch(props.type) {
+        case 'completed': 
+            factsText = `$${props.cost} ${props.name != 'The Big Dig' ? 'million' : 'billion'} | ${props.length} miles`
+            break
+        default:
+            factsText = 'Cost & length TBD'
+    }
+
+    wrapper.classList.add('popup-header', `popup-${props.type}`, 'flex-row', 'flex-between', 'flex-align-center')
     title.classList.add('popup-title')
     subtitle.classList.add('popup-subtitle')
 
     title.textContent = props.name
     subtitle.textContent = props.location
+    facts.textContent = factsText
 
-    div.appendChild(title)
-    div.appendChild(subtitle)
+    textWrapper.appendChild(title)
+    textWrapper.appendChild(subtitle)
+    wrapper.appendChild(textWrapper)
+    wrapper.appendChild(facts)
 
-    return div
+    return wrapper
 }
 
 const makeFigure = props => {
@@ -72,20 +86,29 @@ const makeFigure = props => {
     const img = document.createElement('img')
     const capt = document.createElement('figcaption')
     const a = document.createElement('a')
+    const projA = document.createElement('a')
 
     fig.classList.add('popup-figure')
     img.classList.add('popup-img')
     capt.classList.add('popup-figcaption')
+    projA.classList.add('project-link', `project-link-${props.type}`)
     
     img.src = props.imgSrc
     img.alt = `${props.name} photo`
     a.href = props.imgLink
+    projA.href = props.link
     a.target = "_blank"
+    projA.target = "_blank"
     a.rel = "noopener noreferrer"
+    projA.rel = "noopener noreferrer"
+    
     a.textContent = props.caption
+    projA.textContent = 'view project'
     capt.textContent = 'credit: '
 
+
     capt.appendChild(a)
+    capt.appendChild(projA)
     fig.appendChild(img)
     fig.appendChild(capt)
 
@@ -96,52 +119,41 @@ const makeImpactList = impact => {
     const ul = document.createElement('ul')
     const lis = impact.split('--').map(i => `<li>${i}</li>`).join('')
     
+    ul.classList.add('impact-list')
     ul.insertAdjacentHTML('afterbegin', lis)
 
     return ul
 }
 
 const makeCompletedList = props => {
+    const container = document.createElement('section')
+    const impact = document.createElement('h4')
+    const impactList = makeImpactList(props.impact)
+
+    container.classList.add('impact-container')
+    impact.classList.add('impact-header')
+    impactList.classList.add('popup-list')
+
+    impact.textContent = `Key impacts: `
+
+    container.appendChild(impact)
+    container.appendChild(impactList)
+
+    return container
+}
+
+const makePlannedList = props => {
     const ul = document.createElement('ul')
-    const len = document.createElement('li')
-    const cost = document.createElement('li')
-    const impact = document.createElement('li')
-    const link = document.createElement('li')
-    const a = document.createElement('a')
-
-    const impactBody = makeImpactList(props.impact)
-
-    ul.classList.add('list-unstyled', 'popup-list')
-
-    len.textContent = `length: ${props.length} miles`
-    cost.textContent = `cost: $${props.cost} ${props.name != 'The Big Dig' ? 'million' : 'billion'}`
-    impact.textContent = `impact: `
-    a.textContent = 'view project'
-    
-    a.href = props.link
-    a.target = "_blank"
-    a.rel = "noopener noreferrer"
-
-    impact.appendChild(impactBody)
-    link.appendChild(a)
-    ul.appendChild(len)
-    ul.appendChild(cost)
-    ul.appendChild(impact)
-    ul.appendChild(link)
 
     return ul
 }
 
-const makePlannedList = props => {
-
-}
-
-const makePopupBody = (props, type) => {
+const makePopupBody = props => {
     const div = document.createElement('div')
     const fig = makeFigure(props)
     let list;
     
-    switch(type) {
+    switch(props.type) {
         case 'completed':
             list = makeCompletedList(props)
             break
@@ -149,7 +161,7 @@ const makePopupBody = (props, type) => {
             list = makePlannedList(props)
     }
 
-    div.classList.add('flex-row', 'flex-align-start')
+    div.classList.add('flex-row', 'flex-align-start', 'popup-body')
 
     div.appendChild(fig)
     div.appendChild(list)
@@ -157,11 +169,11 @@ const makePopupBody = (props, type) => {
     return div
 }
 
-const makeProjectPopup = (props, type) => {
+const makeProjectPopup = props => {
     const popup = document.createElement('div')
 
     const title = makeTitle(props)
-    const content = makePopupBody(props, type)
+    const content = makePopupBody(props)
 
     popup.classList.add('popup-div')
 
@@ -169,39 +181,6 @@ const makeProjectPopup = (props, type) => {
     popup.appendChild(content)
 
     return popup
-}
-
-const makeCompletedHTML = props => {
-    return `
-        <div class="popup-div">
-            <div class="popup-header popup-${props.type}">
-                <h3 class="popup-title">${props.name}</h3>
-                <h4 class="popup-subtitle">${props.location}</h4>
-            </div>
-            <div class="flex-row">    
-                <ul class="list-unstyled popup-list">  
-                    <li>
-                        <figure class="popup-figure">
-                            <img src="${props.imgSrc}" alt="${props.name} photo" class="popup-img" />
-                            <figcaption class="popup-figcaption">credit: <a href="${props.imgLink}" target="_blank" rel="noopener noreferrer">${props.caption}</a></figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        length: ${props.length} miles
-                    </li>
-                    <li>
-                        cost: $${props.cost} ${props.name != 'The Big Dig' ? 'million' : 'billion'}
-                    </li>
-                    <li>
-                        impact:<ul>${props.impact.split('--').map(i => `<li>${i}</li>`).join('')}</ul>
-                    </li>
-                    <li>
-                        <a href="${props.link}" target="_blank" rel="noopener noreferrer">view project</a>
-                    </li>
-                </ul>    
-            </div>
-        </div>
-    `
 }
 
 const makePlannedHTML = props => {
@@ -231,9 +210,8 @@ const makePlannedHTML = props => {
 
 const clickProjectCircle = (e, map) => {
     const project = e.features[0].properties
-    const html = project.type === 'completed' ? makeProjectPopup(project, project.type) : makePlannedHTML(project)
 
-    // makeProjectPopup(project, project.type)
+    const html = makeProjectPopup(project)
 
     popup
     .setLngLat(e.lngLat || project.coords)
