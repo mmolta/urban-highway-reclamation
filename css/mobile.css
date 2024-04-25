@@ -1,6 +1,16 @@
+body {
+    font-size: 15px;
+}
 nav {
     flex-wrap: wrap;
     font-size: 0.8rem;
+}
+
+
+
+.extra-wide {
+    width: 100%;
+    margin-left: 0;
 }
 .logo {
     width: 30px;

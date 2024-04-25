@@ -301,6 +301,11 @@ nav {
     z-index: 2;
     max-width: 500px !important;
 }
+.hover-popup-title {
+    padding: 16px;
+    font-size: 1em;
+    color: var(--theme-main);
+}
 .mapboxgl-popup-content {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 0.95rem;

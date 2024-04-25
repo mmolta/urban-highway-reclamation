@@ -6,6 +6,7 @@ const sections = {
     disclaimer: null,
     references: null
 }
+
 const clickNav = e => {
     const section = e.target.dataset.navto
 
@@ -15,6 +16,7 @@ const clickNav = e => {
 
     el.scrollIntoView({behavior: 'smooth'})
 }
+
 const clickToTop = toTop => {
     return new IntersectionObserver(el => {
         if(el[0].isIntersecting) {
@@ -51,6 +53,7 @@ const makeProjectListItems = (features, list) => {
 
     list.appendChild(frag)
 }
+
 const getListItem = e => {
     switch(e.target.nodeName) {
         case 'STRONG':
@@ -63,6 +66,7 @@ const getListItem = e => {
             return e.target
     }
 }
+
 const hoverMapList = (e, hoverProject, map) => {
     const listItem = getListItem(e)
 
@@ -76,7 +80,8 @@ const hoverMapList = (e, hoverProject, map) => {
 
     hoverProject(shimE, map)
 }
-const clickMapList = (e, clickProjectCircle, map) => {
+
+const clickMapList = (e, map, popup) => {
     const listItem = getListItem(e)
     const featuresString = localStorage.getItem('circle-features')
     const features = JSON.parse(featuresString)
@@ -85,6 +90,7 @@ const clickMapList = (e, clickProjectCircle, map) => {
     const project = features.filter(el => el.id == listItem.dataset.circleid)
     
     if(project.length){
+        popup.remove()
 
         // fake a map event object
         const shimE = {
@@ -92,9 +98,15 @@ const clickMapList = (e, clickProjectCircle, map) => {
                 {properties: project[0].props}
             ]
         }
-        
-        clickProjectCircle(shimE, map)
-    } 
+
+        localStorage.setItem('project-clicked', JSON.stringify(shimE))
+
+        map.flyTo({
+            center: shimE.features[0].properties.coords,
+            zoom: 8,
+            padding: {bottom: 175}
+        })
+    }
 }
 
 export { clickNav, clickToTop, makeProjectListItems, hoverMapList, clickMapList }

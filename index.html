@@ -27,8 +27,8 @@
         
         <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css">
         <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" media="(max-width: 915px)" href="./css/narrow.css">
-        <link rel="stylesheet" media="(max-width: 760px)" href="./css/mobile.css">
+        <!-- <link rel="stylesheet" media="(max-width: 915px)" href="./css/narrow.css"> -->
+        <link rel="stylesheet" media="(max-width: 1000px)" href="./css/mobile.css">
 
         <script type="module" defer src="./js/index.js"></script>
     </head>
@@ -164,28 +164,28 @@
     
                     <div id="map" class="map">
                         <div class="legend">
-                            <h3 class="legend-header">Map Legend</h3>
+                            <h3 class="legend-header">Project Types</h3>
 
                             <form id="map-toggles" class="map-toggles-form">
                                 <label class="map-toggles-label flex-row flex-align-center">
                                     <input type="checkbox" checked disabled />
                                     <span class="map-toggle-symbol map-toggle-symbol-complete"></span>
 
-                                    <span>Completed projects</span>
+                                    <span>Completed</span>
                                 </label>
             
                                 <label class="map-toggles-label flex-row flex-align-center">
                                     <input type="checkbox" checked disabled />
                                     <span class="map-toggle-symbol map-toggle-symbol-developing"></span>
 
-                                    <span>Ongoing projects</span>
+                                    <span>Ongoing</span>
                                 </label>
 
                                 <label class="map-toggles-label flex-row flex-align-center">
                                     <input type="checkbox" checked disabled />
                                     <span class="map-toggle-symbol map-toggle-symbol-planned"></span>
 
-                                    <span>Planned projects</span>
+                                    <span>Planned</span>
                                 </label>
                             </form>
                         </div>

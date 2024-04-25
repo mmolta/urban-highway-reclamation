@@ -164,16 +164,18 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Inner Loop",
+                "name": "Inner Loop East",
                 "location": "Rochester, NY",
-                "type": "developing",
-                "impact": "East segment turned 12 lanes of highway into a boulevard and 5.7 of developable land--generated $229 million in economic development",
+                "type": "completed",
+                "cost": 22,
+                "length": 1.18,
+                "impact": "Turned 12 lanes of highway into a boulevard and 5.7 acres of developable land--generated $229 million in economic development--increased walking by 50% and biking by 60%",
                 "link": "https://www.fhwa.dot.gov/ipd/project_profiles/ny_freeway_to_boulvard_rochester.aspx",
                 "imgLink": "https://www.cnu.org/what-we-do/build-great-places/i-490-inner-loop",
                 "imgSrc": "https://www.cnu.org/sites/default/files/Rodchester2.jpg",
                 "caption": "CNU"
             },
-            "geometry": { "type": "Point", "coordinates": [-77.595756, 43.158985] }
+            "geometry": { "type": "Point", "coordinates": [-77.597496, 43.154317] }
         },
         {
             "type": "Feature",
@@ -194,7 +196,9 @@
             "properties": {
                 "name": "Niagara Scenic Parkway",
                 "location": "Niagara Falls, NY",
+                "length": 2,
                 "type": "developing",
+                "cost": 21.4,
                 "impact": "Two miles of freeway will be replaced with a new Niagara Gorge State Park--Elevated section of Robert Moses Parkway removed in 2019",
                 "link": "https://www.dot.ny.gov/NSPRemoval",
                 "imgLink": "https://www.cnu.org/what-we-do/build-great-places/niagara-scenic-parkway",

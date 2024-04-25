@@ -13,6 +13,7 @@ const mapList = document.getElementById('map-list')
 localStorage.setItem('project-hovered', '')
 localStorage.setItem('project-clicked', '')
 localStorage.setItem('list-loaded', '')
+localStorage.setItem('circle-features', '')
 
 // default interactions
 navBtns.forEach(btn => btn.onclick = e => clickNav(e))
@@ -21,15 +22,20 @@ const observer = clickToTop(toTop)
 observer.observe(main)
 
 const map = initMap()
+const popup = new mapboxgl.Popup()
+const hoverPopup = new mapboxgl.Popup({
+    closeButton: false,
+    closeOnClick: false
+})
 
 map.on('load', () => {
     map.addSource('projects', sources.projects)
     map.addLayer(projectsLayer)
 
-    map.on('mouseenter', 'project-circles', e => hoverProject(e, map))
-    map.on('mouseleave', 'project-circles', () => unHoverProject(map))
+    map.on('mouseenter', 'project-circles', e => hoverProject(e, map, hoverPopup))
+    map.on('mouseleave', 'project-circles', () => unHoverProject(map, hoverPopup))
 
-    map.on('click', 'project-circles', e => clickProjectCircle(e, map))
+    map.on('click', 'project-circles', e => clickProjectCircle(e, map, popup))
 
     // wait for a completed sourcedata content event
     map.on('sourcedata', e => {
@@ -57,7 +63,17 @@ map.on('load', () => {
         }
     })
     
-    mapList.onmouseover = e => hoverMapList(e, hoverProject, map)
-    mapList.onmouseleave = () => unHoverProject(map)
-    mapList.onclick = e => clickMapList(e, clickProjectCircle, map)
+    mapList.onmouseover = e => hoverMapList(e, hoverProject, map, hoverPopup)
+    mapList.onmouseleave = () => unHoverProject(map, hoverPopup)
+    mapList.onclick = e => clickMapList(e, map, popup)
+
+    map.on('zoomend', () => {
+        const projectClicked = localStorage.getItem('project-clicked')
+
+        if(projectClicked.length) {
+            clickProjectCircle(JSON.parse(projectClicked), map, popup)
+        }
+
+        localStorage.setItem('project-clicked', '')
+    })
 })

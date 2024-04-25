@@ -17,7 +17,11 @@ const projectsLayer = {
             'planned', '#BDADEA',
             '#fff'
         ],
-        'circle-stroke-width': 1,
+        'circle-stroke-width': ['case',
+            ['boolean', ['feature-state', 'hover'], false],
+            2,
+            1
+        ],
         'circle-stroke-color': '#FDFFFC',
         'circle-stroke-opacity': 1,
     }
