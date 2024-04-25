@@ -125,7 +125,7 @@ const makeImpactList = impact => {
     return ul
 }
 
-const makeCompletedList = props => {
+const makeImpactSection = props => {
     const container = document.createElement('section')
     const impact = document.createElement('h4')
     const impactList = makeImpactList(props.impact)
@@ -142,31 +142,17 @@ const makeCompletedList = props => {
     return container
 }
 
-const makePlannedList = props => {
-    const ul = document.createElement('ul')
-
-    return ul
-}
-
 const makePopupBody = props => {
-    const div = document.createElement('div')
+    const container = document.createElement('div')
     const fig = makeFigure(props)
-    let list;
-    
-    switch(props.type) {
-        case 'completed':
-            list = makeCompletedList(props)
-            break
-        default:
-            list = makePlannedList(props)
-    }
+    const impact = makeImpactSection(props)
 
-    div.classList.add('flex-row', 'flex-align-start', 'popup-body')
+    container.classList.add('flex-row', 'flex-align-start', 'popup-body')
 
-    div.appendChild(fig)
-    div.appendChild(list)
+    container.appendChild(fig)
+    container.appendChild(impact)
 
-    return div
+    return container
 }
 
 const makeProjectPopup = props => {
@@ -181,31 +167,6 @@ const makeProjectPopup = props => {
     popup.appendChild(content)
 
     return popup
-}
-
-const makePlannedHTML = props => {
-    return `
-        <div class="popup-div">
-            <div class="popup-header popup-${props.type}">
-                <h3 class="popup-title">${props.name}</h3>
-                <h4 class="popup-subtitle">${props.location}</h4>
-            </div>
-            <ul class="list-unstyled popup-list">
-                <li>
-                    <figure class="popup-figure">
-                        <img src="${props.imgSrc}" alt="${props.name} photo" class="popup-img" />
-                        <figcaption class="popup-figcaption">credit: <a href="${props.imgLink}" target="_blank" rel="noopener noreferrer">${props.caption}</a></figcaption>
-                    </figure>
-                </li>
-                <li>
-                    details:<ul>${props.details.split('--').map(i => `<li>${i}</li>`).join('')}</ul>
-                </li>
-                <li>
-                    <a href="${props.link}" target="_blank" rel="noopener noreferrer">view ${props.type === 'developing' ? 'project' : 'plan'}</a>
-                </li>
-            </ul>
-        </div>
-    `
 }
 
 const clickProjectCircle = (e, map) => {
