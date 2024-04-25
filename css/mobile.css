@@ -13,16 +13,6 @@ nav {
 .summary-h3 {
     width: 92%;
 }
-.figures-wrapper {
-    flex-wrap: wrap;
-}
-.figures-column {
-    width: 40%;
-    border: none;
-}
-.figures-number {
-    font-size: 2.5rem;
-}
 .map-section {
     flex-direction: column-reverse;
     margin-top: 0;

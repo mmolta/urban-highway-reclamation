@@ -225,27 +225,6 @@ nav {
     margin-top: 0;
     margin-bottom: 48px;
 }
-.figures-wrapper {
-    background-color: var(--theme-accent);
-    color: var(--theme-text);
-    border-radius: var(--border-radius);
-}
-.figures-column {
-    width: 23%;
-    padding: 0 16px;
-    border-right: 4px dashed var(--theme-white);
-    text-align: center;
-    margin: 2rem 0;
-}
-.figures-column:last-of-type {
-    border-right: none;
-}
-.figures-number {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--theme-white);
-    margin-bottom: 4px;
-}
 /* End intro */
 
 
@@ -347,9 +326,6 @@ nav {
     /* compensate 4px border to equal 16px padding line w/header */
     padding: 8px 12px;
     color: var(--theme-text);
-    /* it do be a road */
-    border-left: 4px dashed var(--theme-text);
-    border-right: 4px dashed var(--theme-text);
 }
 .popup-list li {
     margin-bottom: 4px;
