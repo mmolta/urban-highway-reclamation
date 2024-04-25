@@ -79,7 +79,7 @@
                 "link": "http://www.preservenet.com/freeways/FreewaysWestSide.html",
                 "imgLink": "http://www.preservenet.com/freeways/FreewaysWestSide.html",
                 "imgSrc": "http://www.preservenet.com/freeways/NYWestAbove14ths.JPG",
-                "caption": "preservenet"
+                "caption": "Preservation Institute"
             },
             "geometry": { "type": "Point", "coordinates": [-73.993511, 40.772845]}
         },
@@ -143,7 +143,7 @@
                 "link": "https://www.aaroads.com/guides/i-170-md/",
                 "imgLink": "https://www.aaroads.com/wp-content/uploads/maps/mid-atlantic/i-170-baltimore-map.gif",
                 "imgSrc": "https://www.aaroads.com/guides/i-170-md/",
-                "caption": "aaroads"
+                "caption": "AARoads"
             },
             "geometry": { "type": "Point", "coordinates": [-76.595854, 39.295394]}
         },
@@ -227,7 +227,7 @@
                 "link": "https://www.dallascitymap.com/#home",
                 "imgLink": "https://www.dmagazine.com/frontburner/2019/10/txdot-dallas-interstate-30-canyon/",
                 "imgSrc": "https://assets.dmagstatic.com/wp-content/uploads/2019/10/Screen-Shot-2019-10-31-at-10.14.19-AM.png",
-                "caption": "dmagazine"
+                "caption": "D Magazine"
             },
             "geometry": { "type": "Point", "coordinates": [-96.810981, 32.772244]}
         },
@@ -255,7 +255,7 @@
                 "link": "https://webapps.dot.ny.gov/i-81-viaduct-project-overview",
                 "imgLink": "https://webapps.dot.ny.gov/i-81-viaduct-project-overview",
                 "imgSrc": "https://webapps.dot.ny.gov/sites/g/files/oee1081/files/styles/wysiwyg/public/media/2021/07/81-historic.jpg?itok=WVeUB09z",
-                "caption": "Syracue"
+                "caption": "Syracuse"
             },
             "geometry": { "type": "Point", "coordinates": [-76.142915, 43.034296]}
         },
