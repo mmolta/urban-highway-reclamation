@@ -1,4 +1,3 @@
-// @TODO: add hover Feature state to increase size of 
 const projectsLayer = {
     id: 'project-circles',
     type: 'circle',

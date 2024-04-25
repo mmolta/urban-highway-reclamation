@@ -11,7 +11,7 @@ const makeTitle = props => {
             factsText = `$${props.cost} ${props.unit ? 'billion' : 'million'} | ${props.length} miles`
             break
         default:
-            const cost = props.cost ? `$${props.cost} (estimated)` : null
+            const cost = props.cost ? `$${props.cost} million (estimated)` : null
             const length = props.length ? `${props.length} miles` : null
         
             if(cost && length ) {
