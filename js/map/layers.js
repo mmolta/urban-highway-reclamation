@@ -6,8 +6,8 @@ const projectsLayer = {
     paint: {
         'circle-radius': ['case',
             ['boolean', ['feature-state', 'hover'], false],
-            12,
-            8
+            10,
+            6
         ],
         'circle-color': ['match',
             ['get', 'type'],
@@ -21,7 +21,7 @@ const projectsLayer = {
             2,
             1
         ],
-        'circle-stroke-color': '#FDFFFC',
+        'circle-stroke-color': '#2A2922',
         'circle-stroke-opacity': 1,
     }
 }

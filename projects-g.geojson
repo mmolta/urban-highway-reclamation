@@ -114,7 +114,7 @@
                 "imgSrc": "https://www.cnu.org/sites/default/files/aerial_chattanooga_riverfront.jpg",
                 "caption": "CNU"
             },
-            "geometry": { "type": "Point", "coordinates": [-85.319648, 35.042335]}
+            "geometry": { "type": "Point", "coordinates": [-85.3136, 35.0558]}
         },
         {
             "type": "Feature",

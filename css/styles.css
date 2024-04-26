@@ -38,6 +38,8 @@ img {
     --padding: 8px;
 
     --box-shadow: rgba(0, 0, 0, 0.19) 4px 5px 10px, rgba(0, 0, 0, 0.23) 5px 3px 3px;
+    --box-shadow-map: 0 0 0 2px rgba(0,0,0,.1);
+
 }
 .flex-row {
     display: flex;
@@ -203,8 +205,8 @@ nav {
     bottom: 16px;
     width: 2.5rem;
     border-top: 2px solid var(--theme-text);
-    font-size: 2.5rem;
-    line-height: 4.5rem;
+    font-size: 2rem;
+    line-height: 4rem;
     text-align: center;
     opacity: 0;
     transition: opacity 1.25s;
@@ -240,8 +242,6 @@ nav {
 }
 .map-list {
     overscroll-behavior: contain;
-    /* border-top: 4px dashed var(--theme-white);
-    border-bottom: 4px dashed var(--theme-white); */
     width: 20%;
     padding: 0;
     margin-right: 8px;
@@ -275,7 +275,7 @@ nav {
     color: var(--theme-main);
     background-color: var(--theme-white);
     /* replicate mapbox box shadow */
-    box-shadow: 0 0 0 2px rgba(0,0,0,.1);
+    box-shadow: var(--box-shadow-map);
 }
 .map-toggles-label {
     cursor: pointer;
@@ -301,6 +301,11 @@ nav {
     z-index: 2;
     max-width: 500px !important;
 }
+.mapboxgl-popup-close-button {
+    border-radius: none;
+    right: 4px;
+    font-weight: 700;
+}
 .hover-popup-title {
     padding: 16px;
     font-size: 1em;
@@ -310,8 +315,9 @@ nav {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 0.95rem;
     padding: 0;
-    /* border-radius: 0; */
     z-index: 4;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-map);
 }
 .popup-completed {
     color: var(--theme-white);
@@ -327,6 +333,8 @@ nav {
 }
 .popup-header {
     padding: 16px;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
 }
 .popup-title {
     font-size: 1.5em;
@@ -341,6 +349,8 @@ nav {
 .popup-body {
     border-left: 4px dashed var(--theme-white);
     border-right: 4px dashed var(--theme-white);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
     background-color: var(--theme-main);
 }
 .impact-container {

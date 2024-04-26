@@ -103,7 +103,7 @@ const clickMapList = (e, map, popup) => {
 
         map.flyTo({
             center: shimE.features[0].properties.coords,
-            zoom: 8,
+            zoom: 14,
             padding: {bottom: 175}
         })
     }
