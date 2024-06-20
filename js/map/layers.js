@@ -2,7 +2,7 @@ const projectsLayer = {
     id: 'project-circles',
     type: 'circle',
     source: 'projects',
-    'source-layer': 'projects-3w0wjb',
+    'source-layer': 'projects-0m647l',
     paint: {
         'circle-radius': ['case',
             ['boolean', ['feature-state', 'hover'], false],

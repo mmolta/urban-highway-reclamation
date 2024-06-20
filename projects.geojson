@@ -77,10 +77,10 @@
                 "length": 5,
                 "cost": 380,
                 "impact": "Created a landscaped park alongside the Hudson--added bicycle lanes to West street--pedestrian friendly connection to the riverfront",
-                "link": "http://www.preservenet.com/freeways/FreewaysWestSide.html",
-                "imgLink": "http://www.preservenet.com/freeways/FreewaysWestSide.html",
-                "imgSrc": "http://www.preservenet.com/freeways/NYWestAbove14ths.JPG",
-                "caption": "Preservation Institute"
+                "link": "https://www.stantec.com/en/ideas/topic/cities/a-different-west-side-story-how-a-boulevard-changed-manhattan",
+                "imgLink": "https://www.stantec.com/en/ideas/topic/cities/a-different-west-side-story-how-a-boulevard-changed-manhattan",
+                "imgSrc": "https://www.stantec.com/content/dam/stantec/images/ideas/blogs/021/west-side-highway-ny.jpg",
+                "caption": "Stantec"
             },
             "geometry": { "type": "Point", "coordinates": [-73.993511, 40.772845]}
         },
@@ -126,9 +126,9 @@
                 "cost": 45,
                 "impact": "Replaced a stretch of double-decker freeway with a multi-way boulevard--Established a new park, Hayes Green",
                 "link": "https://www.accessmagazine.org/spring-2006/building-boulevard/",
-                "imgLink": "https://www.quora.com/How-did-Octavia-Boulevard-in-San-Francisco-get-designed",
-                "imgSrc": "https://qph.cf2.quoracdn.net/main-qimg-89dcb19929b5cf13406587318cf6219f-lq",
-                "caption": "Quora"
+                "imgLink": "https://www.cnu.org/what-we-do/build-great-places/octavia-boulevard",
+                "imgSrc": "https://www.cnu.org/sites/default/files/sanfran_octavia-boulevard.jpg",
+                "caption": "CNU"
             },
             "geometry": { "type": "Point", "coordinates": [-122.423902, 37.773731]}
         },
@@ -142,7 +142,7 @@
                 "cost": 8.5,
                 "impact": "removed abandonded western spur from downtown--space used to expand transit station parking",
                 "link": "https://www.aaroads.com/guides/i-170-md/",
-                "imgLink": "https://www.aaroads.com/wp-content/uploads/maps/mid-atlantic/i-170-baltimore-map.gif",
+                "imgLink": "https://www.aaroads.com/md/040/thb/pulaski-st-at-i-170-2.jpg",
                 "imgSrc": "https://www.aaroads.com/guides/i-170-md/",
                 "caption": "AARoads"
             },
