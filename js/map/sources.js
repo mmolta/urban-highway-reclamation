@@ -1,7 +1,7 @@
 const sources = {
     projects: {
         type: 'vector',
-        url: 'mapbox://mmolta.2i15axa1',
+        url: 'mapbox://mmmolta.09vceecx',
         promoteId: 'name'
     }
 }
