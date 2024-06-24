@@ -11,7 +11,7 @@ const hoverProject = (e, map, popup)  => {
         // check and remove old hover state
         if (hoveredId.length) {
             map.setFeatureState(
-                { source: 'projects', sourceLayer: 'projects-3w0wjb', id: hoveredId },
+                { source: 'projects', sourceLayer: 'projects-0m647l', id: hoveredId },
                 { hover: false }
             );
         }
@@ -20,7 +20,7 @@ const hoverProject = (e, map, popup)  => {
 
         // add new hover state
         map.setFeatureState(
-            { source: 'projects', sourceLayer: 'projects-3w0wjb', id: hoveredId },
+            { source: 'projects', sourceLayer: 'projects-0m647l', id: hoveredId },
             { hover: true }
         );
 
@@ -42,7 +42,7 @@ const unHoverProject = (map, popup) => {
 
     if (hoveredId.length) {
         map.setFeatureState(
-            { source: 'projects', sourceLayer: 'projects-3w0wjb', id: hoveredId },
+            { source: 'projects', sourceLayer: 'projects-0m647l', id: hoveredId },
             { hover: false }
         );
     }
