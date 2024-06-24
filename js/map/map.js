@@ -1,4 +1,5 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoibW1tb2x0YSIsImEiOiJjbHhtbWpsdDkwNGJmMmtwdDR3NngxeHN6In0.591dUOKVnfx22BYxu8eqRw'
+// URL restricted token
+mapboxgl.accessToken = 'pk.eyJ1IjoibW1tb2x0YSIsImEiOiJjbHh0ZzJsMDcwMWM1MmlwdmhhbmtsdzJhIn0.ojjY7H9qprmGvjJroZDgjg'
 
 const initMap = () => {
     const map = new mapboxgl.Map({
